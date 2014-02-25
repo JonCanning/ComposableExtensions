@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Full - ComposableExtensions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jay Tuley">
+
+    <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://jbtule.github.io/ComposableExtensions/content/style.css" />
+    <script type="text/javascript" src="https://jbtule.github.io/ComposableExtensions/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="https://github.com/jbtule/ComposableExtensions">github page</a></li>
+        </ul>
+        <h3 class="muted">ComposableExtensions</h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Full</h1>
+<div class="xmldoc">
+<p>Longer parameter versions of <code>System.Linq.ParallelEnumerable</code> methods</p>
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+            aggregate (...)
+          </code>
+          <div class="tip" id="27">
+            <strong>Signature:</strong> seed:&#39;TAccumulate -&gt; func:(&#39;TAccumulate -&gt; &#39;TSource -&gt; &#39;TAccumulate) -&gt; resultSelector:(&#39;TAccumulate -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
+                          <strong>Type parameters:</strong> 'TAccumulate, 'TSource, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Aggregate(source, seed, System.Func&lt;'TAccumulate, 'TSource, 'TAccumulate&gt;(func), System.Func&lt;'TAccumulate, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L124-124" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
+            any predicate source
+          </code>
+          <div class="tip" id="28">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Any(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L127-127" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
+            contains value comparer source
+          </code>
+          <div class="tip" id="29">
+            <strong>Signature:</strong> value:&#39;?9738 -&gt; comparer:IEqualityComparer&lt;&#39;?9738&gt; -&gt; source:ParallelQuery&lt;&#39;?9738&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9738          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Contains(source, value, comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L130-130" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
+            count predicate source
+          </code>
+          <div class="tip" id="30">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Count(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L133-133" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            defaultIfEmpty defaultValue source
+          </code>
+          <div class="tip" id="31">
+            <strong>Signature:</strong> defaultValue:&#39;?9742 -&gt; source:ParallelQuery&lt;&#39;?9742&gt; -&gt; ParallelQuery&lt;&#39;?9742&gt;<br />
+                          <strong>Type parameters:</strong> '?9742          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>DefaultIfEmpty(source, defaultValue)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L136-136" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+            distinct comparer source
+          </code>
+          <div class="tip" id="32">
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?9744&gt; -&gt; source:ParallelQuery&lt;&#39;?9744&gt; -&gt; ParallelQuery&lt;&#39;?9744&gt;<br />
+                          <strong>Type parameters:</strong> '?9744          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Distinct(source, comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L139-139" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
+            first predicate source
+          </code>
+          <div class="tip" id="33">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>First(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L142-142" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
+            firstOrDefault predicate source
+          </code>
+          <div class="tip" id="34">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>FirstOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L145-145" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
+            groupBy (...)
+          </code>
+          <div class="tip" id="35">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; resultSelector:(&#39;TKey -&gt; IEnumerable&lt;&#39;TElement&gt; -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>GroupBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), System.Func&lt;'TKey, System.Collections.Generic.IEnumerable&lt;'TElement&gt;, 'TResult&gt;(resultSelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L148-148" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
+            last predicate source
+          </code>
+          <div class="tip" id="36">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Last(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L151-151" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
+            lastOrDefault predicate source
+          </code>
+          <div class="tip" id="37">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>LastOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L154-154" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
+            longCount predicate source
+          </code>
+          <div class="tip" id="38">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>LongCount(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L157-157" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
+            orderBy keySelector comparer source
+          </code>
+          <div class="tip" id="39">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>OrderBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L160-160" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
+            orderByDescending (...)
+          </code>
+          <div class="tip" id="40">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>OrderByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L163-163" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
+            single predicate source
+          </code>
+          <div class="tip" id="41">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Single(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L166-166" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            singleOrDefault predicate source
+          </code>
+          <div class="tip" id="42">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SingleOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L169-169" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
+            thenBy keySelector comparer source
+          </code>
+          <div class="tip" id="43">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ThenBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L172-172" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
+            thenByDescending (...)
+          </code>
+          <div class="tip" id="44">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ThenByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L175-175" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
+            toDictionary (...)
+          </code>
+          <div class="tip" id="45">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; Dictionary&lt;&#39;TKey,&#39;TElement&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToDictionary(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L178-178" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
+            toLookup (...)
+          </code>
+          <div class="tip" id="46">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ILookup&lt;&#39;TKey,&#39;TElement&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToLookup(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/ParallelEnumerable.fsx#L181-181" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <ul class="nav nav-list" id="menu">
+            <li class="nav-header">ComposableExtensions</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/index.html">Home page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://nuget.org/packages/ComposableExtensions">Get Library via NuGet</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions">Source Code on GitHub</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions/blob/master/LICENSE.txt">License</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions/releases">Release Notes</a></li>
+            
+            <li class="nav-header">Getting started</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/index.html">Home page</a></li>
+
+            <li class="nav-header">Documentation</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/reference/index.html">API Reference</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jbtule/ComposableExtensions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+  </body>
+  </html>

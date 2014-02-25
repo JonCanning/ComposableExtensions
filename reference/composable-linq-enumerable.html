@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Enumerable - ComposableExtensions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jay Tuley">
+
+    <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://jbtule.github.io/ComposableExtensions/content/style.css" />
+    <script type="text/javascript" src="https://jbtule.github.io/ComposableExtensions/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="https://github.com/jbtule/ComposableExtensions">github page</a></li>
+        </ul>
+        <h3 class="muted">ComposableExtensions</h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Enumerable</h1>
+<div class="xmldoc">
+<p>Corresponding <code>System.Linq.Enumerable</code> static methods as functions</p>
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="composable-linq-enumerable-full.html">Full</a>
+          </td>
+          <td class="xmldoc"><p>Longer parameter versions of <code>System.Linq.Enumerable</code> methods</p>
+</td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+            aggregate func source
+          </code>
+          <div class="tip" id="48">
+            <strong>Signature:</strong> func:(&#39;TSource -&gt; &#39;TSource -&gt; &#39;TSource) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Aggregate(source, System.Func&lt;'TSource, 'TSource, 'TSource&gt;(func))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L7-7" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
+            all predicate source
+          </code>
+          <div class="tip" id="49">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>All(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L10-10" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
+            any source
+          </code>
+          <div class="tip" id="50">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9791&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9791          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Any(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L13-13" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
+            asEnumerable source
+          </code>
+          <div class="tip" id="51">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9793&gt; -&gt; IEnumerable&lt;&#39;?9793&gt;<br />
+                          <strong>Type parameters:</strong> '?9793          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>AsEnumerable(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L16-16" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
+            cast source
+          </code>
+          <div class="tip" id="52">
+            <strong>Signature:</strong> source:IEnumerable -&gt; IEnumerable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Cast&lt;'TResult&gt;(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L19-19" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
+            concat first second
+          </code>
+          <div class="tip" id="53">
+            <strong>Signature:</strong> first:IEnumerable&lt;&#39;?9797&gt; -&gt; second:IEnumerable&lt;&#39;?9797&gt; -&gt; IEnumerable&lt;&#39;?9797&gt;<br />
+                          <strong>Type parameters:</strong> '?9797          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Concat(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L22-22" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
+            contains value source
+          </code>
+          <div class="tip" id="54">
+            <strong>Signature:</strong> value:&#39;?9799 -&gt; source:IEnumerable&lt;&#39;?9799&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9799          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Contains(source, value)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L25-25" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
+            count source
+          </code>
+          <div class="tip" id="55">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9801&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?9801          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Count(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L28-28" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
+            defaultIfEmpty source
+          </code>
+          <div class="tip" id="56">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9803&gt; -&gt; IEnumerable&lt;&#39;?9803&gt;<br />
+                          <strong>Type parameters:</strong> '?9803          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>DefaultIfEmpty(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L31-31" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
+            distinct source
+          </code>
+          <div class="tip" id="57">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9805&gt; -&gt; IEnumerable&lt;&#39;?9805&gt;<br />
+                          <strong>Type parameters:</strong> '?9805          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Distinct(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L34-34" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
+            elementAt index source
+          </code>
+          <div class="tip" id="58">
+            <strong>Signature:</strong> index:int -&gt; source:IEnumerable&lt;&#39;?9807&gt; -&gt; &#39;?9807<br />
+                          <strong>Type parameters:</strong> '?9807          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ElementAt(source, index)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L37-37" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
+            elementAtOrDefault index source
+          </code>
+          <div class="tip" id="59">
+            <strong>Signature:</strong> index:int -&gt; source:IEnumerable&lt;&#39;?9809&gt; -&gt; &#39;?9809<br />
+                          <strong>Type parameters:</strong> '?9809          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ElementAtOrDefault(source, index)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L40-40" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
+            except first second
+          </code>
+          <div class="tip" id="60">
+            <strong>Signature:</strong> first:IEnumerable&lt;&#39;?9811&gt; -&gt; second:IEnumerable&lt;&#39;?9811&gt; -&gt; IEnumerable&lt;&#39;?9811&gt;<br />
+                          <strong>Type parameters:</strong> '?9811          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Except(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L43-43" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
+            first source
+          </code>
+          <div class="tip" id="61">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9813&gt; -&gt; &#39;?9813<br />
+                          <strong>Type parameters:</strong> '?9813          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>First(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L46-46" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
+            firstOrDefault source
+          </code>
+          <div class="tip" id="62">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9815&gt; -&gt; &#39;?9815<br />
+                          <strong>Type parameters:</strong> '?9815          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>FirstOrDefault(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L49-49" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
+            groupBy keySelector source
+          </code>
+          <div class="tip" id="63">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; IEnumerable&lt;IGrouping&lt;&#39;TKey,&#39;TSource&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>GroupBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L52-52" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '64', 64)" onmouseover="showTip(event, '64', 64)">
+            groupJoin (...)
+          </code>
+          <div class="tip" id="64">
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult) -&gt; outer:IEnumerable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IEnumerable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>GroupJoin(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L55-55" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '65', 65)" onmouseover="showTip(event, '65', 65)">
+            intersect first second
+          </code>
+          <div class="tip" id="65">
+            <strong>Signature:</strong> first:IEnumerable&lt;&#39;?9825&gt; -&gt; second:IEnumerable&lt;&#39;?9825&gt; -&gt; IEnumerable&lt;&#39;?9825&gt;<br />
+                          <strong>Type parameters:</strong> '?9825          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Intersect(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L58-58" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '66', 66)" onmouseover="showTip(event, '66', 66)">
+            join (...)
+          </code>
+          <div class="tip" id="66">
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult) -&gt; outer:IEnumerable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IEnumerable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Join(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, 'TInner, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L61-61" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '67', 67)" onmouseover="showTip(event, '67', 67)">
+            last source
+          </code>
+          <div class="tip" id="67">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9832&gt; -&gt; &#39;?9832<br />
+                          <strong>Type parameters:</strong> '?9832          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Last(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L64-64" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '68', 68)" onmouseover="showTip(event, '68', 68)">
+            lastOrDefault source
+          </code>
+          <div class="tip" id="68">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9834&gt; -&gt; &#39;?9834<br />
+                          <strong>Type parameters:</strong> '?9834          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>LastOrDefault(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L67-67" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '69', 69)" onmouseover="showTip(event, '69', 69)">
+            longCount source
+          </code>
+          <div class="tip" id="69">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9836&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> '?9836          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>LongCount(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L70-70" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '70', 70)" onmouseover="showTip(event, '70', 70)">
+            ofType source
+          </code>
+          <div class="tip" id="70">
+            <strong>Signature:</strong> source:IEnumerable -&gt; IEnumerable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>OfType&lt;'TResult&gt;(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L73-73" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '71', 71)" onmouseover="showTip(event, '71', 71)">
+            orderBy keySelector source
+          </code>
+          <div class="tip" id="71">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; IOrderedEnumerable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>OrderBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L76-76" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '72', 72)" onmouseover="showTip(event, '72', 72)">
+            orderByDescending keySelector source
+          </code>
+          <div class="tip" id="72">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; IOrderedEnumerable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>OrderByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L79-79" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
+            reverse source
+          </code>
+          <div class="tip" id="73">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9846&gt; -&gt; IEnumerable&lt;&#39;?9846&gt;<br />
+                          <strong>Type parameters:</strong> '?9846          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Reverse(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L82-82" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
+            sequenceEqual first second
+          </code>
+          <div class="tip" id="74">
+            <strong>Signature:</strong> first:IEnumerable&lt;&#39;?9848&gt; -&gt; second:IEnumerable&lt;&#39;?9848&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9848          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SequenceEqual(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L85-85" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
+            single source
+          </code>
+          <div class="tip" id="75">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9850&gt; -&gt; &#39;?9850<br />
+                          <strong>Type parameters:</strong> '?9850          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Single(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L88-88" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '76', 76)" onmouseover="showTip(event, '76', 76)">
+            singleOrDefault source
+          </code>
+          <div class="tip" id="76">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9852&gt; -&gt; &#39;?9852<br />
+                          <strong>Type parameters:</strong> '?9852          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SingleOrDefault(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L91-91" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '77', 77)" onmouseover="showTip(event, '77', 77)">
+            skip count source
+          </code>
+          <div class="tip" id="77">
+            <strong>Signature:</strong> count:int -&gt; source:IEnumerable&lt;&#39;?9854&gt; -&gt; IEnumerable&lt;&#39;?9854&gt;<br />
+                          <strong>Type parameters:</strong> '?9854          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Skip(source, count)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L94-94" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '78', 78)" onmouseover="showTip(event, '78', 78)">
+            take count source
+          </code>
+          <div class="tip" id="78">
+            <strong>Signature:</strong> count:int -&gt; source:IEnumerable&lt;&#39;?9856&gt; -&gt; IEnumerable&lt;&#39;?9856&gt;<br />
+                          <strong>Type parameters:</strong> '?9856          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Take(source, count)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L97-97" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '79', 79)" onmouseover="showTip(event, '79', 79)">
+            thenBy keySelector source
+          </code>
+          <div class="tip" id="79">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IOrderedEnumerable&lt;&#39;TSource&gt; -&gt; IOrderedEnumerable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ThenBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L100-100" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
+            thenByDescending keySelector source
+          </code>
+          <div class="tip" id="80">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IOrderedEnumerable&lt;&#39;TSource&gt; -&gt; IOrderedEnumerable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ThenByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L103-103" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
+            toArray source
+          </code>
+          <div class="tip" id="81">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9864&gt; -&gt; &#39;?9864 []<br />
+                          <strong>Type parameters:</strong> '?9864          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToArray(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L106-106" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '82', 82)" onmouseover="showTip(event, '82', 82)">
+            toDictionary keySelector source
+          </code>
+          <div class="tip" id="82">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; Dictionary&lt;&#39;TKey,&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToDictionary(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L109-109" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '83', 83)" onmouseover="showTip(event, '83', 83)">
+            toList source
+          </code>
+          <div class="tip" id="83">
+            <strong>Signature:</strong> source:IEnumerable&lt;&#39;?9869&gt; -&gt; List&lt;&#39;?9869&gt;<br />
+                          <strong>Type parameters:</strong> '?9869          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToList(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L112-112" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '84', 84)" onmouseover="showTip(event, '84', 84)">
+            toLookup keySelector source
+          </code>
+          <div class="tip" id="84">
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:IEnumerable&lt;&#39;TSource&gt; -&gt; ILookup&lt;&#39;TKey,&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>ToLookup(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L115-115" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '85', 85)" onmouseover="showTip(event, '85', 85)">
+            union first second
+          </code>
+          <div class="tip" id="85">
+            <strong>Signature:</strong> first:IEnumerable&lt;&#39;?9874&gt; -&gt; second:IEnumerable&lt;&#39;?9874&gt; -&gt; IEnumerable&lt;&#39;?9874&gt;<br />
+                          <strong>Type parameters:</strong> '?9874          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Union(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L118-118" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '86', 86)" onmouseover="showTip(event, '86', 86)">
+            zip resultSelector first second
+          </code>
+          <div class="tip" id="86">
+            <strong>Signature:</strong> resultSelector:(&#39;TFirst -&gt; &#39;TSecond -&gt; &#39;TResult) -&gt; first:IEnumerable&lt;&#39;TFirst&gt; -&gt; second:IEnumerable&lt;&#39;TSecond&gt; -&gt; IEnumerable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TFirst, 'TSecond, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Zip(first, second, System.Func&lt;'TFirst, 'TSecond, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/tree/master/src//Composable.Linq/Enumerable.fsx#L121-121" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <ul class="nav nav-list" id="menu">
+            <li class="nav-header">ComposableExtensions</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/index.html">Home page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://nuget.org/packages/ComposableExtensions">Get Library via NuGet</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions">Source Code on GitHub</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions/blob/master/LICENSE.txt">License</a></li>
+            <li><a href="https://github.com/jbtule/ComposableExtensions/releases">Release Notes</a></li>
+            
+            <li class="nav-header">Getting started</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/index.html">Home page</a></li>
+
+            <li class="nav-header">Documentation</li>
+            <li><a href="https://jbtule.github.io/ComposableExtensions/reference/index.html">API Reference</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jbtule/ComposableExtensions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+  </body>
+  </html>
