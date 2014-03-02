@@ -70,609 +70,833 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+          <code onmouseout="hideTip(event, '111', 111)" onmouseover="showTip(event, '111', 111)">
             aggregate func source
           </code>
-          <div class="tip" id="48">
+          <div class="tip" id="111">
             <strong>Signature:</strong> func:(&#39;TSource -&gt; &#39;TSource -&gt; &#39;TSource) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Aggregate(source, System.Func&lt;'TSource, 'TSource, 'TSource&gt;(func))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L7-7" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L8-8" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
+          <code onmouseout="hideTip(event, '112', 112)" onmouseover="showTip(event, '112', 112)">
             all predicate source
           </code>
-          <div class="tip" id="49">
+          <div class="tip" id="112">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>All(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L10-10" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L11-11" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
+          <code onmouseout="hideTip(event, '113', 113)" onmouseover="showTip(event, '113', 113)">
             any source
           </code>
-          <div class="tip" id="50">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9659&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?9659          </div>
+          <div class="tip" id="113">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10129&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10129          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Any(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L13-13" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L14-14" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
+          <code onmouseout="hideTip(event, '114', 114)" onmouseover="showTip(event, '114', 114)">
             asEnumerable source
           </code>
-          <div class="tip" id="51">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9661&gt; -&gt; IEnumerable&lt;&#39;?9661&gt;<br />
-                          <strong>Type parameters:</strong> '?9661          </div>
+          <div class="tip" id="114">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10131&gt; -&gt; IEnumerable&lt;&#39;?10131&gt;<br />
+                          <strong>Type parameters:</strong> '?10131          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>AsEnumerable(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L16-16" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L17-17" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
+          <code onmouseout="hideTip(event, '115', 115)" onmouseover="showTip(event, '115', 115)">
+            asOrdered source
+          </code>
+          <div class="tip" id="115">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>AsOrdered(source)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L20-20" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '116', 116)" onmouseover="showTip(event, '116', 116)">
             asSequential source
           </code>
-          <div class="tip" id="52">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9663&gt; -&gt; IEnumerable&lt;&#39;?9663&gt;<br />
-                          <strong>Type parameters:</strong> '?9663          </div>
+          <div class="tip" id="116">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10135&gt; -&gt; IEnumerable&lt;&#39;?10135&gt;<br />
+                          <strong>Type parameters:</strong> '?10135          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>AsSequential(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L19-19" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L23-23" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
+          <code onmouseout="hideTip(event, '117', 117)" onmouseover="showTip(event, '117', 117)">
             asUnordered source
           </code>
-          <div class="tip" id="53">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9665&gt; -&gt; ParallelQuery&lt;&#39;?9665&gt;<br />
-                          <strong>Type parameters:</strong> '?9665          </div>
+          <div class="tip" id="117">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10137&gt; -&gt; ParallelQuery&lt;&#39;?10137&gt;<br />
+                          <strong>Type parameters:</strong> '?10137          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>AsUnordered(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L22-22" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L26-26" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
+          <code onmouseout="hideTip(event, '118', 118)" onmouseover="showTip(event, '118', 118)">
             cast source
           </code>
-          <div class="tip" id="54">
+          <div class="tip" id="118">
             <strong>Signature:</strong> source:ParallelQuery -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TResult          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Cast&lt;'TResult&gt;(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L25-25" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L29-29" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
+          <code onmouseout="hideTip(event, '119', 119)" onmouseover="showTip(event, '119', 119)">
+            concat first second
+          </code>
+          <div class="tip" id="119">
+            <strong>Signature:</strong> first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Concat(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L32-32" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '120', 120)" onmouseover="showTip(event, '120', 120)">
             contains value source
           </code>
-          <div class="tip" id="55">
-            <strong>Signature:</strong> value:&#39;?9669 -&gt; source:ParallelQuery&lt;&#39;?9669&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?9669          </div>
+          <div class="tip" id="120">
+            <strong>Signature:</strong> value:&#39;?10143 -&gt; source:ParallelQuery&lt;&#39;?10143&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10143          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Contains(source, value)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L28-28" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L35-35" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
+          <code onmouseout="hideTip(event, '121', 121)" onmouseover="showTip(event, '121', 121)">
             count source
           </code>
-          <div class="tip" id="56">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9671&gt; -&gt; int<br />
-                          <strong>Type parameters:</strong> '?9671          </div>
+          <div class="tip" id="121">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10145&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?10145          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Count(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L31-31" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L38-38" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
+          <code onmouseout="hideTip(event, '122', 122)" onmouseover="showTip(event, '122', 122)">
             defaultIfEmpty source
           </code>
-          <div class="tip" id="57">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9673&gt; -&gt; ParallelQuery&lt;&#39;?9673&gt;<br />
-                          <strong>Type parameters:</strong> '?9673          </div>
+          <div class="tip" id="122">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10147&gt; -&gt; ParallelQuery&lt;&#39;?10147&gt;<br />
+                          <strong>Type parameters:</strong> '?10147          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>DefaultIfEmpty(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L34-34" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L41-41" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
+          <code onmouseout="hideTip(event, '123', 123)" onmouseover="showTip(event, '123', 123)">
             distinct source
           </code>
-          <div class="tip" id="58">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9675&gt; -&gt; ParallelQuery&lt;&#39;?9675&gt;<br />
-                          <strong>Type parameters:</strong> '?9675          </div>
+          <div class="tip" id="123">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10149&gt; -&gt; ParallelQuery&lt;&#39;?10149&gt;<br />
+                          <strong>Type parameters:</strong> '?10149          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Distinct(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L37-37" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L44-44" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
+          <code onmouseout="hideTip(event, '124', 124)" onmouseover="showTip(event, '124', 124)">
             elementAt index source
           </code>
-          <div class="tip" id="59">
-            <strong>Signature:</strong> index:int -&gt; source:ParallelQuery&lt;&#39;?9677&gt; -&gt; &#39;?9677<br />
-                          <strong>Type parameters:</strong> '?9677          </div>
+          <div class="tip" id="124">
+            <strong>Signature:</strong> index:int -&gt; source:ParallelQuery&lt;&#39;?10151&gt; -&gt; &#39;?10151<br />
+                          <strong>Type parameters:</strong> '?10151          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ElementAt(source, index)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L40-40" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L47-47" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
+          <code onmouseout="hideTip(event, '125', 125)" onmouseover="showTip(event, '125', 125)">
             elementAtOrDefault index source
           </code>
-          <div class="tip" id="60">
-            <strong>Signature:</strong> index:int -&gt; source:ParallelQuery&lt;&#39;?9679&gt; -&gt; &#39;?9679<br />
-                          <strong>Type parameters:</strong> '?9679          </div>
+          <div class="tip" id="125">
+            <strong>Signature:</strong> index:int -&gt; source:ParallelQuery&lt;&#39;?10153&gt; -&gt; &#39;?10153<br />
+                          <strong>Type parameters:</strong> '?10153          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ElementAtOrDefault(source, index)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L43-43" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L50-50" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
+          <code onmouseout="hideTip(event, '126', 126)" onmouseover="showTip(event, '126', 126)">
+            except first second
+          </code>
+          <div class="tip" id="126">
+            <strong>Signature:</strong> first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Except(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L53-53" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '127', 127)" onmouseover="showTip(event, '127', 127)">
             first source
           </code>
-          <div class="tip" id="61">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9681&gt; -&gt; &#39;?9681<br />
-                          <strong>Type parameters:</strong> '?9681          </div>
+          <div class="tip" id="127">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10157&gt; -&gt; &#39;?10157<br />
+                          <strong>Type parameters:</strong> '?10157          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>First(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L46-46" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L56-56" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
+          <code onmouseout="hideTip(event, '128', 128)" onmouseover="showTip(event, '128', 128)">
             firstOrDefault source
           </code>
-          <div class="tip" id="62">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9683&gt; -&gt; &#39;?9683<br />
-                          <strong>Type parameters:</strong> '?9683          </div>
+          <div class="tip" id="128">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10159&gt; -&gt; &#39;?10159<br />
+                          <strong>Type parameters:</strong> '?10159          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>FirstOrDefault(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L49-49" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L59-59" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
+          <code onmouseout="hideTip(event, '129', 129)" onmouseover="showTip(event, '129', 129)">
             forAll action source
           </code>
-          <div class="tip" id="63">
-            <strong>Signature:</strong> action:Action&lt;&#39;?9685&gt; -&gt; source:ParallelQuery&lt;&#39;?9685&gt; -&gt; unit<br />
-                          <strong>Type parameters:</strong> '?9685          </div>
+          <div class="tip" id="129">
+            <strong>Signature:</strong> action:Action&lt;&#39;?10161&gt; -&gt; source:ParallelQuery&lt;&#39;?10161&gt; -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?10161          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ForAll(source, action)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L52-52" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L62-62" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '64', 64)" onmouseover="showTip(event, '64', 64)">
+          <code onmouseout="hideTip(event, '130', 130)" onmouseover="showTip(event, '130', 130)">
             groupBy keySelector source
           </code>
-          <div class="tip" id="64">
+          <div class="tip" id="130">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;IGrouping&lt;&#39;TKey,&#39;TSource&gt;&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>GroupBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L55-55" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L65-65" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '65', 65)" onmouseover="showTip(event, '65', 65)">
+          <code onmouseout="hideTip(event, '131', 131)" onmouseover="showTip(event, '131', 131)">
+            groupJoin (...)
+          </code>
+          <div class="tip" id="131">
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult) -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>GroupJoin(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L68-68" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '132', 132)" onmouseover="showTip(event, '132', 132)">
+            intersect first second
+          </code>
+          <div class="tip" id="132">
+            <strong>Signature:</strong> first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Intersect(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L71-71" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '133', 133)" onmouseover="showTip(event, '133', 133)">
+            join (...)
+          </code>
+          <div class="tip" id="133">
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult) -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Join(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, 'TInner, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L74-74" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '134', 134)" onmouseover="showTip(event, '134', 134)">
             last source
           </code>
-          <div class="tip" id="65">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9690&gt; -&gt; &#39;?9690<br />
-                          <strong>Type parameters:</strong> '?9690          </div>
+          <div class="tip" id="134">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10178&gt; -&gt; &#39;?10178<br />
+                          <strong>Type parameters:</strong> '?10178          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Last(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L58-58" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L77-77" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '66', 66)" onmouseover="showTip(event, '66', 66)">
+          <code onmouseout="hideTip(event, '135', 135)" onmouseover="showTip(event, '135', 135)">
             lastOrDefault source
           </code>
-          <div class="tip" id="66">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9692&gt; -&gt; &#39;?9692<br />
-                          <strong>Type parameters:</strong> '?9692          </div>
+          <div class="tip" id="135">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10180&gt; -&gt; &#39;?10180<br />
+                          <strong>Type parameters:</strong> '?10180          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>LastOrDefault(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L61-61" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L80-80" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '67', 67)" onmouseover="showTip(event, '67', 67)">
+          <code onmouseout="hideTip(event, '136', 136)" onmouseover="showTip(event, '136', 136)">
             longCount source
           </code>
-          <div class="tip" id="67">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9694&gt; -&gt; int64<br />
-                          <strong>Type parameters:</strong> '?9694          </div>
+          <div class="tip" id="136">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10182&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> '?10182          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>LongCount(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L64-64" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L83-83" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '68', 68)" onmouseover="showTip(event, '68', 68)">
+          <code onmouseout="hideTip(event, '137', 137)" onmouseover="showTip(event, '137', 137)">
             ofType source
           </code>
-          <div class="tip" id="68">
+          <div class="tip" id="137">
             <strong>Signature:</strong> source:ParallelQuery -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TResult          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>OfType&lt;'TResult&gt;(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L67-67" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L86-86" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '69', 69)" onmouseover="showTip(event, '69', 69)">
+          <code onmouseout="hideTip(event, '138', 138)" onmouseover="showTip(event, '138', 138)">
             orderBy keySelector source
           </code>
-          <div class="tip" id="69">
+          <div class="tip" id="138">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>OrderBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L70-70" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L89-89" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '70', 70)" onmouseover="showTip(event, '70', 70)">
+          <code onmouseout="hideTip(event, '139', 139)" onmouseover="showTip(event, '139', 139)">
             orderByDescending keySelector source
           </code>
-          <div class="tip" id="70">
+          <div class="tip" id="139">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>OrderByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L73-73" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L92-92" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '71', 71)" onmouseover="showTip(event, '71', 71)">
+          <code onmouseout="hideTip(event, '140', 140)" onmouseover="showTip(event, '140', 140)">
             reverse source
           </code>
-          <div class="tip" id="71">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9704&gt; -&gt; ParallelQuery&lt;&#39;?9704&gt;<br />
-                          <strong>Type parameters:</strong> '?9704          </div>
+          <div class="tip" id="140">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10192&gt; -&gt; ParallelQuery&lt;&#39;?10192&gt;<br />
+                          <strong>Type parameters:</strong> '?10192          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Reverse(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L76-76" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L95-95" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '72', 72)" onmouseover="showTip(event, '72', 72)">
+          <code onmouseout="hideTip(event, '141', 141)" onmouseover="showTip(event, '141', 141)">
+            select selector source
+          </code>
+          <div class="tip" id="141">
+            <strong>Signature:</strong> selector:(&#39;TSource -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Select(source, System.Func&lt;'TSource, 'TResult&gt;(selector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L98-98" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '142', 142)" onmouseover="showTip(event, '142', 142)">
+            selectMany selector source
+          </code>
+          <div class="tip" id="142">
+            <strong>Signature:</strong> selector:(&#39;TSource -&gt; IEnumerable&lt;&#39;TResult&gt;) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SelectMany(source, System.Func&lt;'TSource, System.Collections.Generic.IEnumerable&lt;'TResult&gt;&gt;(selector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L101-101" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '143', 143)" onmouseover="showTip(event, '143', 143)">
+            sequenceEqual first second
+          </code>
+          <div class="tip" id="143">
+            <strong>Signature:</strong> first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SequenceEqual(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L104-104" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '144', 144)" onmouseover="showTip(event, '144', 144)">
             single source
           </code>
-          <div class="tip" id="72">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9706&gt; -&gt; &#39;?9706<br />
-                          <strong>Type parameters:</strong> '?9706          </div>
+          <div class="tip" id="144">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10202&gt; -&gt; &#39;?10202<br />
+                          <strong>Type parameters:</strong> '?10202          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Single(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L79-79" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L107-107" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
+          <code onmouseout="hideTip(event, '145', 145)" onmouseover="showTip(event, '145', 145)">
             singleOrDefault source
           </code>
-          <div class="tip" id="73">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9708&gt; -&gt; &#39;?9708<br />
-                          <strong>Type parameters:</strong> '?9708          </div>
+          <div class="tip" id="145">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10204&gt; -&gt; &#39;?10204<br />
+                          <strong>Type parameters:</strong> '?10204          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>SingleOrDefault(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L82-82" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L110-110" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
+          <code onmouseout="hideTip(event, '146', 146)" onmouseover="showTip(event, '146', 146)">
             skip count source
           </code>
-          <div class="tip" id="74">
-            <strong>Signature:</strong> count:int -&gt; source:ParallelQuery&lt;&#39;?9710&gt; -&gt; ParallelQuery&lt;&#39;?9710&gt;<br />
-                          <strong>Type parameters:</strong> '?9710          </div>
+          <div class="tip" id="146">
+            <strong>Signature:</strong> count:int -&gt; source:ParallelQuery&lt;&#39;?10206&gt; -&gt; ParallelQuery&lt;&#39;?10206&gt;<br />
+                          <strong>Type parameters:</strong> '?10206          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Skip(source, count)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L85-85" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L113-113" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
+          <code onmouseout="hideTip(event, '147', 147)" onmouseover="showTip(event, '147', 147)">
+            skipWhile predicate source
+          </code>
+          <div class="tip" id="147">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>SkipWhile(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L116-116" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '148', 148)" onmouseover="showTip(event, '148', 148)">
             take count source
           </code>
-          <div class="tip" id="75">
-            <strong>Signature:</strong> count:int -&gt; source:ParallelQuery&lt;&#39;?9712&gt; -&gt; ParallelQuery&lt;&#39;?9712&gt;<br />
-                          <strong>Type parameters:</strong> '?9712          </div>
+          <div class="tip" id="148">
+            <strong>Signature:</strong> count:int -&gt; source:ParallelQuery&lt;&#39;?10210&gt; -&gt; ParallelQuery&lt;&#39;?10210&gt;<br />
+                          <strong>Type parameters:</strong> '?10210          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>Take(source, count)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L88-88" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L119-119" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '76', 76)" onmouseover="showTip(event, '76', 76)">
+          <code onmouseout="hideTip(event, '149', 149)" onmouseover="showTip(event, '149', 149)">
+            takeWhile predicate source
+          </code>
+          <div class="tip" id="149">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>TakeWhile(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L122-122" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '150', 150)" onmouseover="showTip(event, '150', 150)">
             thenBy keySelector source
           </code>
-          <div class="tip" id="76">
+          <div class="tip" id="150">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ThenBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L91-91" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L125-125" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '77', 77)" onmouseover="showTip(event, '77', 77)">
+          <code onmouseout="hideTip(event, '151', 151)" onmouseover="showTip(event, '151', 151)">
             thenByDescending keySelector source
           </code>
-          <div class="tip" id="77">
+          <div class="tip" id="151">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ThenByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L94-94" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L128-128" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '78', 78)" onmouseover="showTip(event, '78', 78)">
+          <code onmouseout="hideTip(event, '152', 152)" onmouseover="showTip(event, '152', 152)">
             toArray source
           </code>
-          <div class="tip" id="78">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9720&gt; -&gt; &#39;?9720 []<br />
-                          <strong>Type parameters:</strong> '?9720          </div>
+          <div class="tip" id="152">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10220&gt; -&gt; &#39;?10220 []<br />
+                          <strong>Type parameters:</strong> '?10220          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ToArray(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L97-97" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L131-131" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '79', 79)" onmouseover="showTip(event, '79', 79)">
+          <code onmouseout="hideTip(event, '153', 153)" onmouseover="showTip(event, '153', 153)">
             toDictionary keySelector source
           </code>
-          <div class="tip" id="79">
+          <div class="tip" id="153">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; Dictionary&lt;&#39;TKey,&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ToDictionary(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L100-100" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L134-134" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
+          <code onmouseout="hideTip(event, '154', 154)" onmouseover="showTip(event, '154', 154)">
             toList source
           </code>
-          <div class="tip" id="80">
-            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?9725&gt; -&gt; List&lt;&#39;?9725&gt;<br />
-                          <strong>Type parameters:</strong> '?9725          </div>
+          <div class="tip" id="154">
+            <strong>Signature:</strong> source:ParallelQuery&lt;&#39;?10225&gt; -&gt; List&lt;&#39;?10225&gt;<br />
+                          <strong>Type parameters:</strong> '?10225          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ToList(source)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L103-103" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L137-137" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
+          <code onmouseout="hideTip(event, '155', 155)" onmouseover="showTip(event, '155', 155)">
             toLookup keySelector source
           </code>
-          <div class="tip" id="81">
+          <div class="tip" id="155">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ILookup&lt;&#39;TKey,&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>ToLookup(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector))</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L106-106" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L140-140" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '82', 82)" onmouseover="showTip(event, '82', 82)">
+          <code onmouseout="hideTip(event, '156', 156)" onmouseover="showTip(event, '156', 156)">
+            union first second
+          </code>
+          <div class="tip" id="156">
+            <strong>Signature:</strong> first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Union(first, second)</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L143-143" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '157', 157)" onmouseover="showTip(event, '157', 157)">
+            where predicate source
+          </code>
+          <div class="tip" id="157">
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Where(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L146-146" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '158', 158)" onmouseover="showTip(event, '158', 158)">
             withCancellation (...)
           </code>
-          <div class="tip" id="82">
-            <strong>Signature:</strong> cancellationToken:CancellationToken -&gt; source:ParallelQuery&lt;&#39;?9730&gt; -&gt; ParallelQuery&lt;&#39;?9730&gt;<br />
-                          <strong>Type parameters:</strong> '?9730          </div>
+          <div class="tip" id="158">
+            <strong>Signature:</strong> cancellationToken:CancellationToken -&gt; source:ParallelQuery&lt;&#39;?10234&gt; -&gt; ParallelQuery&lt;&#39;?10234&gt;<br />
+                          <strong>Type parameters:</strong> '?10234          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>WithCancellation(source, cancellationToken)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L109-109" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L149-149" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '83', 83)" onmouseover="showTip(event, '83', 83)">
+          <code onmouseout="hideTip(event, '159', 159)" onmouseover="showTip(event, '159', 159)">
             withDegreeOfParallelism (...)
           </code>
-          <div class="tip" id="83">
-            <strong>Signature:</strong> degreeOfParallelism:int -&gt; source:ParallelQuery&lt;&#39;?9732&gt; -&gt; ParallelQuery&lt;&#39;?9732&gt;<br />
-                          <strong>Type parameters:</strong> '?9732          </div>
+          <div class="tip" id="159">
+            <strong>Signature:</strong> degreeOfParallelism:int -&gt; source:ParallelQuery&lt;&#39;?10236&gt; -&gt; ParallelQuery&lt;&#39;?10236&gt;<br />
+                          <strong>Type parameters:</strong> '?10236          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>WithDegreeOfParallelism(source, degreeOfParallelism)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L112-112" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L152-152" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '84', 84)" onmouseover="showTip(event, '84', 84)">
+          <code onmouseout="hideTip(event, '160', 160)" onmouseover="showTip(event, '160', 160)">
             withExecutionMode executionMode source
           </code>
-          <div class="tip" id="84">
-            <strong>Signature:</strong> executionMode:ParallelExecutionMode -&gt; source:ParallelQuery&lt;&#39;?9734&gt; -&gt; ParallelQuery&lt;&#39;?9734&gt;<br />
-                          <strong>Type parameters:</strong> '?9734          </div>
+          <div class="tip" id="160">
+            <strong>Signature:</strong> executionMode:ParallelExecutionMode -&gt; source:ParallelQuery&lt;&#39;?10238&gt; -&gt; ParallelQuery&lt;&#39;?10238&gt;<br />
+                          <strong>Type parameters:</strong> '?10238          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>WithExecutionMode(source, executionMode)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L115-115" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L155-155" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '85', 85)" onmouseover="showTip(event, '85', 85)">
+          <code onmouseout="hideTip(event, '161', 161)" onmouseover="showTip(event, '161', 161)">
             withMergeOptions mergeOptions source
           </code>
-          <div class="tip" id="85">
-            <strong>Signature:</strong> mergeOptions:ParallelMergeOptions -&gt; source:ParallelQuery&lt;&#39;?9736&gt; -&gt; ParallelQuery&lt;&#39;?9736&gt;<br />
-                          <strong>Type parameters:</strong> '?9736          </div>
+          <div class="tip" id="161">
+            <strong>Signature:</strong> mergeOptions:ParallelMergeOptions -&gt; source:ParallelQuery&lt;&#39;?10240&gt; -&gt; ParallelQuery&lt;&#39;?10240&gt;<br />
+                          <strong>Type parameters:</strong> '?10240          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <code>WithMergeOptions(source, mergeOptions)</code></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L118-118" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L158-158" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '162', 162)" onmouseover="showTip(event, '162', 162)">
+            zip resultSelector first second
+          </code>
+          <div class="tip" id="162">
+            <strong>Signature:</strong> resultSelector:(&#39;TFirst -&gt; &#39;TSecond -&gt; &#39;TResult) -&gt; first:ParallelQuery&lt;&#39;TFirst&gt; -&gt; second:ParallelQuery&lt;&#39;TSecond&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TFirst, 'TSecond, 'TResult          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <code>Zip(first, second, System.Func&lt;'TFirst, 'TSecond, 'TResult&gt;(resultSelector))</code></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/ParallelEnumerable.fsx#L161-161" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
     </tbody>
