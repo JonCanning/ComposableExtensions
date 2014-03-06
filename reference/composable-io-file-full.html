@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>File - ComposableExtensions</title>
+    <title>Full - ComposableExtensions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Jay Tuley">
@@ -36,30 +36,12 @@
 
 
 
-<h1>File</h1>
+<h1>Full</h1>
 <div class="xmldoc">
-<p>Corresponding static methods as functions for <a href="http://msdn.microsoft.com/en-us/library/system.io.file"><code>System.IO.File</code></a></p>
+<p>Longer parameter versions of <code>System.IO.File</code> methods</p>
 </div>
 
 <!-- Render nested types and modules, if there are any -->
-  <h2>Nested types and modules</h2>
-  <div>
-      <table class="table table-bordered module-list">
-    <thead>
-      <tr><td>Module</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="module-name">
-            <a href="composable-io-file-full.html">Full</a>
-          </td>
-          <td class="xmldoc"><p>Longer parameter versions of <code>System.IO.File</code> methods</p>
-</td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
 
   <h3>Functions and values</h3>
   <table class="table table-bordered member-list">
@@ -70,33 +52,33 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
-            appendAllLines path contents
+          <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
+            appendAllLines path encoding contents
           </code>
-          <div class="tip" id="3">
-            <strong>Signature:</strong> path:string -&gt; contents:IEnumerable&lt;string&gt; -&gt; unit<br />
+          <div class="tip" id="1">
+            <strong>Signature:</strong> path:string -&gt; encoding:Encoding -&gt; contents:IEnumerable&lt;string&gt; -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.io.file.appendalllines"><code>AppendAllLines(path, contents)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.io.file.appendalllines"><code>AppendAllLines(path, contents, encoding)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.IO/File.fsx#L8-8" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.IO/File.fsx#L17-17" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
-            writeAllLines path contents
+          <code onmouseout="hideTip(event, '2', 2)" onmouseover="showTip(event, '2', 2)">
+            writeAllLines path encoding contents
           </code>
-          <div class="tip" id="4">
-            <strong>Signature:</strong> path:String -&gt; contents:IEnumerable&lt;String&gt; -&gt; unit<br />
+          <div class="tip" id="2">
+            <strong>Signature:</strong> path:String -&gt; encoding:Encoding -&gt; contents:IEnumerable&lt;String&gt; -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.io.file.writealllines"><code>WriteAllLines(path, contents)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.io.file.writealllines"><code>WriteAllLines(path, contents, encoding)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.IO/File.fsx#L11-11" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.IO/File.fsx#L20-20" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
     </tbody>

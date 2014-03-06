@@ -38,7 +38,7 @@
 
 <h1>Queryable</h1>
 <div class="xmldoc">
-<p>Corresponding <code>System.Linq.Queryable</code> static methods as functions</p>
+<p>Corresponding static methods as functions for <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable"><code>System.Linq.Queryable</code></a></p>
 </div>
 
 <!-- Render nested types and modules, if there are any -->
@@ -70,15 +70,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '203', 203)" onmouseover="showTip(event, '203', 203)">
+          <code onmouseout="hideTip(event, '112', 112)" onmouseover="showTip(event, '112', 112)">
             aggregate func source
           </code>
-          <div class="tip" id="203">
+          <div class="tip" id="112">
             <strong>Signature:</strong> func:Expr&lt;(&#39;TSource -&gt; &#39;TSource -&gt; &#39;TSource)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Aggregate(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TSource, 'TSource&gt;&gt;(func))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.aggregate"><code>Aggregate(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TSource, 'TSource&gt;&gt;(func))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L10-10" class="github-link">Go to GitHub source</a>
         </td>
@@ -86,15 +86,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '204', 204)" onmouseover="showTip(event, '204', 204)">
+          <code onmouseout="hideTip(event, '113', 113)" onmouseover="showTip(event, '113', 113)">
             all predicate source
           </code>
-          <div class="tip" id="204">
+          <div class="tip" id="113">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; bool<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>All(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.all"><code>All(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L13-13" class="github-link">Go to GitHub source</a>
         </td>
@@ -102,15 +102,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '205', 205)" onmouseover="showTip(event, '205', 205)">
+          <code onmouseout="hideTip(event, '114', 114)" onmouseover="showTip(event, '114', 114)">
             any source
           </code>
-          <div class="tip" id="205">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9945&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?9945          </div>
+          <div class="tip" id="114">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9941&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9941          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Any(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.any"><code>Any(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L16-16" class="github-link">Go to GitHub source</a>
         </td>
@@ -118,15 +118,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '206', 206)" onmouseover="showTip(event, '206', 206)">
+          <code onmouseout="hideTip(event, '115', 115)" onmouseover="showTip(event, '115', 115)">
             asQueryable source
           </code>
-          <div class="tip" id="206">
+          <div class="tip" id="115">
             <strong>Signature:</strong> source:IEnumerable&lt;&#39;TElement&gt; -&gt; IQueryable&lt;&#39;TElement&gt;<br />
                           <strong>Type parameters:</strong> 'TElement          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>AsQueryable(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.asqueryable"><code>AsQueryable(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L19-19" class="github-link">Go to GitHub source</a>
         </td>
@@ -134,15 +134,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '207', 207)" onmouseover="showTip(event, '207', 207)">
+          <code onmouseout="hideTip(event, '116', 116)" onmouseover="showTip(event, '116', 116)">
             cast source
           </code>
-          <div class="tip" id="207">
+          <div class="tip" id="116">
             <strong>Signature:</strong> source:IQueryable -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Cast&lt;'TResult&gt;(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.cast"><code>Cast&lt;'TResult&gt;(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L22-22" class="github-link">Go to GitHub source</a>
         </td>
@@ -150,15 +150,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '208', 208)" onmouseover="showTip(event, '208', 208)">
+          <code onmouseout="hideTip(event, '117', 117)" onmouseover="showTip(event, '117', 117)">
             concat source1 source2
           </code>
-          <div class="tip" id="208">
-            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?9951&gt; -&gt; source2:IEnumerable&lt;&#39;?9951&gt; -&gt; IQueryable&lt;&#39;?9951&gt;<br />
-                          <strong>Type parameters:</strong> '?9951          </div>
+          <div class="tip" id="117">
+            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?9947&gt; -&gt; source2:IEnumerable&lt;&#39;?9947&gt; -&gt; IQueryable&lt;&#39;?9947&gt;<br />
+                          <strong>Type parameters:</strong> '?9947          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Concat(source1, source2)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.concat"><code>Concat(source1, source2)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L25-25" class="github-link">Go to GitHub source</a>
         </td>
@@ -166,15 +166,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '209', 209)" onmouseover="showTip(event, '209', 209)">
+          <code onmouseout="hideTip(event, '118', 118)" onmouseover="showTip(event, '118', 118)">
             contains item source
           </code>
-          <div class="tip" id="209">
-            <strong>Signature:</strong> item:&#39;?9953 -&gt; source:IQueryable&lt;&#39;?9953&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?9953          </div>
+          <div class="tip" id="118">
+            <strong>Signature:</strong> item:&#39;?9949 -&gt; source:IQueryable&lt;&#39;?9949&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?9949          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Contains(source, item)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.contains"><code>Contains(source, item)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L28-28" class="github-link">Go to GitHub source</a>
         </td>
@@ -182,15 +182,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '210', 210)" onmouseover="showTip(event, '210', 210)">
+          <code onmouseout="hideTip(event, '119', 119)" onmouseover="showTip(event, '119', 119)">
             count source
           </code>
-          <div class="tip" id="210">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9955&gt; -&gt; int<br />
-                          <strong>Type parameters:</strong> '?9955          </div>
+          <div class="tip" id="119">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9951&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> '?9951          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Count(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.count"><code>Count(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L31-31" class="github-link">Go to GitHub source</a>
         </td>
@@ -198,15 +198,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '211', 211)" onmouseover="showTip(event, '211', 211)">
+          <code onmouseout="hideTip(event, '120', 120)" onmouseover="showTip(event, '120', 120)">
             defaultIfEmpty source
           </code>
-          <div class="tip" id="211">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9957&gt; -&gt; IQueryable&lt;&#39;?9957&gt;<br />
-                          <strong>Type parameters:</strong> '?9957          </div>
+          <div class="tip" id="120">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9953&gt; -&gt; IQueryable&lt;&#39;?9953&gt;<br />
+                          <strong>Type parameters:</strong> '?9953          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>DefaultIfEmpty(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.defaultifempty"><code>DefaultIfEmpty(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L34-34" class="github-link">Go to GitHub source</a>
         </td>
@@ -214,15 +214,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '212', 212)" onmouseover="showTip(event, '212', 212)">
+          <code onmouseout="hideTip(event, '121', 121)" onmouseover="showTip(event, '121', 121)">
             distinct source
           </code>
-          <div class="tip" id="212">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9959&gt; -&gt; IQueryable&lt;&#39;?9959&gt;<br />
-                          <strong>Type parameters:</strong> '?9959          </div>
+          <div class="tip" id="121">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9955&gt; -&gt; IQueryable&lt;&#39;?9955&gt;<br />
+                          <strong>Type parameters:</strong> '?9955          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Distinct(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.distinct"><code>Distinct(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L37-37" class="github-link">Go to GitHub source</a>
         </td>
@@ -230,15 +230,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '213', 213)" onmouseover="showTip(event, '213', 213)">
+          <code onmouseout="hideTip(event, '122', 122)" onmouseover="showTip(event, '122', 122)">
             elementAt index source
           </code>
-          <div class="tip" id="213">
-            <strong>Signature:</strong> index:int -&gt; source:IQueryable&lt;&#39;?9961&gt; -&gt; &#39;?9961<br />
-                          <strong>Type parameters:</strong> '?9961          </div>
+          <div class="tip" id="122">
+            <strong>Signature:</strong> index:int -&gt; source:IQueryable&lt;&#39;?9957&gt; -&gt; &#39;?9957<br />
+                          <strong>Type parameters:</strong> '?9957          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>ElementAt(source, index)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.elementat"><code>ElementAt(source, index)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L40-40" class="github-link">Go to GitHub source</a>
         </td>
@@ -246,15 +246,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '214', 214)" onmouseover="showTip(event, '214', 214)">
+          <code onmouseout="hideTip(event, '123', 123)" onmouseover="showTip(event, '123', 123)">
             elementAtOrDefault index source
           </code>
-          <div class="tip" id="214">
-            <strong>Signature:</strong> index:int -&gt; source:IQueryable&lt;&#39;?9963&gt; -&gt; &#39;?9963<br />
-                          <strong>Type parameters:</strong> '?9963          </div>
+          <div class="tip" id="123">
+            <strong>Signature:</strong> index:int -&gt; source:IQueryable&lt;&#39;?9959&gt; -&gt; &#39;?9959<br />
+                          <strong>Type parameters:</strong> '?9959          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>ElementAtOrDefault(source, index)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.elementatordefault"><code>ElementAtOrDefault(source, index)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L43-43" class="github-link">Go to GitHub source</a>
         </td>
@@ -262,15 +262,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '215', 215)" onmouseover="showTip(event, '215', 215)">
+          <code onmouseout="hideTip(event, '124', 124)" onmouseover="showTip(event, '124', 124)">
             except source2 source1
           </code>
-          <div class="tip" id="215">
-            <strong>Signature:</strong> source2:IEnumerable&lt;&#39;?9965&gt; -&gt; source1:IQueryable&lt;&#39;?9965&gt; -&gt; IQueryable&lt;&#39;?9965&gt;<br />
-                          <strong>Type parameters:</strong> '?9965          </div>
+          <div class="tip" id="124">
+            <strong>Signature:</strong> source2:IEnumerable&lt;&#39;?9961&gt; -&gt; source1:IQueryable&lt;&#39;?9961&gt; -&gt; IQueryable&lt;&#39;?9961&gt;<br />
+                          <strong>Type parameters:</strong> '?9961          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Except(source1, source2)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.except"><code>Except(source1, source2)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L46-46" class="github-link">Go to GitHub source</a>
         </td>
@@ -278,15 +278,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '216', 216)" onmouseover="showTip(event, '216', 216)">
+          <code onmouseout="hideTip(event, '125', 125)" onmouseover="showTip(event, '125', 125)">
             first source
           </code>
-          <div class="tip" id="216">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9967&gt; -&gt; &#39;?9967<br />
-                          <strong>Type parameters:</strong> '?9967          </div>
+          <div class="tip" id="125">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9963&gt; -&gt; &#39;?9963<br />
+                          <strong>Type parameters:</strong> '?9963          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>First(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.first"><code>First(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L49-49" class="github-link">Go to GitHub source</a>
         </td>
@@ -294,15 +294,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '217', 217)" onmouseover="showTip(event, '217', 217)">
+          <code onmouseout="hideTip(event, '126', 126)" onmouseover="showTip(event, '126', 126)">
             firstOrDefault source
           </code>
-          <div class="tip" id="217">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9969&gt; -&gt; &#39;?9969<br />
-                          <strong>Type parameters:</strong> '?9969          </div>
+          <div class="tip" id="126">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9965&gt; -&gt; &#39;?9965<br />
+                          <strong>Type parameters:</strong> '?9965          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>FirstOrDefault(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.firstordefault"><code>FirstOrDefault(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L52-52" class="github-link">Go to GitHub source</a>
         </td>
@@ -310,15 +310,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '218', 218)" onmouseover="showTip(event, '218', 218)">
+          <code onmouseout="hideTip(event, '127', 127)" onmouseover="showTip(event, '127', 127)">
             groupBy keySelector source
           </code>
-          <div class="tip" id="218">
+          <div class="tip" id="127">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;IGrouping&lt;&#39;TKey,&#39;TSource&gt;&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>GroupBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupby"><code>GroupBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L55-55" class="github-link">Go to GitHub source</a>
         </td>
@@ -326,15 +326,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '219', 219)" onmouseover="showTip(event, '219', 219)">
+          <code onmouseout="hideTip(event, '128', 128)" onmouseover="showTip(event, '128', 128)">
             groupJoin (...)
           </code>
-          <div class="tip" id="219">
+          <div class="tip" id="128">
             <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult)&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>GroupJoin(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;&gt;(resultSelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupjoin"><code>GroupJoin(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;&gt;(resultSelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L58-58" class="github-link">Go to GitHub source</a>
         </td>
@@ -342,15 +342,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '220', 220)" onmouseover="showTip(event, '220', 220)">
+          <code onmouseout="hideTip(event, '129', 129)" onmouseover="showTip(event, '129', 129)">
             intersect source1 source2
           </code>
-          <div class="tip" id="220">
-            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?9979&gt; -&gt; source2:IEnumerable&lt;&#39;?9979&gt; -&gt; IQueryable&lt;&#39;?9979&gt;<br />
-                          <strong>Type parameters:</strong> '?9979          </div>
+          <div class="tip" id="129">
+            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?9975&gt; -&gt; source2:IEnumerable&lt;&#39;?9975&gt; -&gt; IQueryable&lt;&#39;?9975&gt;<br />
+                          <strong>Type parameters:</strong> '?9975          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Intersect(source1, source2)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.intersect"><code>Intersect(source1, source2)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L61-61" class="github-link">Go to GitHub source</a>
         </td>
@@ -358,15 +358,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '221', 221)" onmouseover="showTip(event, '221', 221)">
+          <code onmouseout="hideTip(event, '130', 130)" onmouseover="showTip(event, '130', 130)">
             join (...)
           </code>
-          <div class="tip" id="221">
+          <div class="tip" id="130">
             <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult)&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Join(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TInner, 'TResult&gt;&gt;(resultSelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.join"><code>Join(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TInner, 'TResult&gt;&gt;(resultSelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L64-64" class="github-link">Go to GitHub source</a>
         </td>
@@ -374,15 +374,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '222', 222)" onmouseover="showTip(event, '222', 222)">
+          <code onmouseout="hideTip(event, '131', 131)" onmouseover="showTip(event, '131', 131)">
             last source
           </code>
-          <div class="tip" id="222">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9986&gt; -&gt; &#39;?9986<br />
-                          <strong>Type parameters:</strong> '?9986          </div>
+          <div class="tip" id="131">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9982&gt; -&gt; &#39;?9982<br />
+                          <strong>Type parameters:</strong> '?9982          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Last(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.last"><code>Last(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L67-67" class="github-link">Go to GitHub source</a>
         </td>
@@ -390,15 +390,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '223', 223)" onmouseover="showTip(event, '223', 223)">
+          <code onmouseout="hideTip(event, '132', 132)" onmouseover="showTip(event, '132', 132)">
             lastOrDefault source
           </code>
-          <div class="tip" id="223">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9988&gt; -&gt; &#39;?9988<br />
-                          <strong>Type parameters:</strong> '?9988          </div>
+          <div class="tip" id="132">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9984&gt; -&gt; &#39;?9984<br />
+                          <strong>Type parameters:</strong> '?9984          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>LastOrDefault(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.lastordefault"><code>LastOrDefault(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L70-70" class="github-link">Go to GitHub source</a>
         </td>
@@ -406,15 +406,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '224', 224)" onmouseover="showTip(event, '224', 224)">
+          <code onmouseout="hideTip(event, '133', 133)" onmouseover="showTip(event, '133', 133)">
             longCount source
           </code>
-          <div class="tip" id="224">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9990&gt; -&gt; int64<br />
-                          <strong>Type parameters:</strong> '?9990          </div>
+          <div class="tip" id="133">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9986&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> '?9986          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>LongCount(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.longcount"><code>LongCount(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L73-73" class="github-link">Go to GitHub source</a>
         </td>
@@ -422,15 +422,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '225', 225)" onmouseover="showTip(event, '225', 225)">
+          <code onmouseout="hideTip(event, '134', 134)" onmouseover="showTip(event, '134', 134)">
             max source
           </code>
-          <div class="tip" id="225">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9992&gt; -&gt; &#39;?9992<br />
-                          <strong>Type parameters:</strong> '?9992          </div>
+          <div class="tip" id="134">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9988&gt; -&gt; &#39;?9988<br />
+                          <strong>Type parameters:</strong> '?9988          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Max(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.max"><code>Max(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L76-76" class="github-link">Go to GitHub source</a>
         </td>
@@ -438,15 +438,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '226', 226)" onmouseover="showTip(event, '226', 226)">
+          <code onmouseout="hideTip(event, '135', 135)" onmouseover="showTip(event, '135', 135)">
             min source
           </code>
-          <div class="tip" id="226">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9994&gt; -&gt; &#39;?9994<br />
-                          <strong>Type parameters:</strong> '?9994          </div>
+          <div class="tip" id="135">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?9990&gt; -&gt; &#39;?9990<br />
+                          <strong>Type parameters:</strong> '?9990          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Min(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.min"><code>Min(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L79-79" class="github-link">Go to GitHub source</a>
         </td>
@@ -454,15 +454,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '227', 227)" onmouseover="showTip(event, '227', 227)">
+          <code onmouseout="hideTip(event, '136', 136)" onmouseover="showTip(event, '136', 136)">
             ofType source
           </code>
-          <div class="tip" id="227">
+          <div class="tip" id="136">
             <strong>Signature:</strong> source:IQueryable -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>OfType&lt;'TResult&gt;(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.oftype"><code>OfType&lt;'TResult&gt;(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L82-82" class="github-link">Go to GitHub source</a>
         </td>
@@ -470,15 +470,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '228', 228)" onmouseover="showTip(event, '228', 228)">
+          <code onmouseout="hideTip(event, '137', 137)" onmouseover="showTip(event, '137', 137)">
             orderBy keySelector source
           </code>
-          <div class="tip" id="228">
+          <div class="tip" id="137">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>OrderBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderby"><code>OrderBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L85-85" class="github-link">Go to GitHub source</a>
         </td>
@@ -486,15 +486,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '229', 229)" onmouseover="showTip(event, '229', 229)">
+          <code onmouseout="hideTip(event, '138', 138)" onmouseover="showTip(event, '138', 138)">
             orderByDescending keySelector source
           </code>
-          <div class="tip" id="229">
+          <div class="tip" id="138">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>OrderByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderbydescending"><code>OrderByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L88-88" class="github-link">Go to GitHub source</a>
         </td>
@@ -502,15 +502,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '230', 230)" onmouseover="showTip(event, '230', 230)">
+          <code onmouseout="hideTip(event, '139', 139)" onmouseover="showTip(event, '139', 139)">
             reverse source
           </code>
-          <div class="tip" id="230">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10004&gt; -&gt; IQueryable&lt;&#39;?10004&gt;<br />
-                          <strong>Type parameters:</strong> '?10004          </div>
+          <div class="tip" id="139">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10000&gt; -&gt; IQueryable&lt;&#39;?10000&gt;<br />
+                          <strong>Type parameters:</strong> '?10000          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Reverse(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.reverse"><code>Reverse(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L91-91" class="github-link">Go to GitHub source</a>
         </td>
@@ -518,15 +518,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '231', 231)" onmouseover="showTip(event, '231', 231)">
+          <code onmouseout="hideTip(event, '140', 140)" onmouseover="showTip(event, '140', 140)">
             select selector source
           </code>
-          <div class="tip" id="231">
+          <div class="tip" id="140">
             <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Select(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.select"><code>Select(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L94-94" class="github-link">Go to GitHub source</a>
         </td>
@@ -534,15 +534,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '232', 232)" onmouseover="showTip(event, '232', 232)">
+          <code onmouseout="hideTip(event, '141', 141)" onmouseover="showTip(event, '141', 141)">
             selectMany selector source
           </code>
-          <div class="tip" id="232">
+          <div class="tip" id="141">
             <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; IEnumerable&lt;&#39;TResult&gt;)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>SelectMany(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Collections.Generic.IEnumerable&lt;'TResult&gt;&gt;&gt;(selector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.selectmany"><code>SelectMany(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Collections.Generic.IEnumerable&lt;'TResult&gt;&gt;&gt;(selector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L97-97" class="github-link">Go to GitHub source</a>
         </td>
@@ -550,15 +550,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '233', 233)" onmouseover="showTip(event, '233', 233)">
+          <code onmouseout="hideTip(event, '142', 142)" onmouseover="showTip(event, '142', 142)">
             sequenceEqual source1 source2
           </code>
-          <div class="tip" id="233">
-            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?10012&gt; -&gt; source2:IEnumerable&lt;&#39;?10012&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?10012          </div>
+          <div class="tip" id="142">
+            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?10008&gt; -&gt; source2:IEnumerable&lt;&#39;?10008&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10008          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>SequenceEqual(source1, source2)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.sequenceequal"><code>SequenceEqual(source1, source2)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L100-100" class="github-link">Go to GitHub source</a>
         </td>
@@ -566,15 +566,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '234', 234)" onmouseover="showTip(event, '234', 234)">
+          <code onmouseout="hideTip(event, '143', 143)" onmouseover="showTip(event, '143', 143)">
             single source
           </code>
-          <div class="tip" id="234">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10014&gt; -&gt; &#39;?10014<br />
-                          <strong>Type parameters:</strong> '?10014          </div>
+          <div class="tip" id="143">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10010&gt; -&gt; &#39;?10010<br />
+                          <strong>Type parameters:</strong> '?10010          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Single(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.single"><code>Single(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L103-103" class="github-link">Go to GitHub source</a>
         </td>
@@ -582,15 +582,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '235', 235)" onmouseover="showTip(event, '235', 235)">
+          <code onmouseout="hideTip(event, '144', 144)" onmouseover="showTip(event, '144', 144)">
             singleOrDefault source
           </code>
-          <div class="tip" id="235">
-            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10016&gt; -&gt; &#39;?10016<br />
-                          <strong>Type parameters:</strong> '?10016          </div>
+          <div class="tip" id="144">
+            <strong>Signature:</strong> source:IQueryable&lt;&#39;?10012&gt; -&gt; &#39;?10012<br />
+                          <strong>Type parameters:</strong> '?10012          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>SingleOrDefault(source)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.singleordefault"><code>SingleOrDefault(source)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L106-106" class="github-link">Go to GitHub source</a>
         </td>
@@ -598,15 +598,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '236', 236)" onmouseover="showTip(event, '236', 236)">
+          <code onmouseout="hideTip(event, '145', 145)" onmouseover="showTip(event, '145', 145)">
             skip count source
           </code>
-          <div class="tip" id="236">
-            <strong>Signature:</strong> count:int -&gt; source:IQueryable&lt;&#39;?10018&gt; -&gt; IQueryable&lt;&#39;?10018&gt;<br />
-                          <strong>Type parameters:</strong> '?10018          </div>
+          <div class="tip" id="145">
+            <strong>Signature:</strong> count:int -&gt; source:IQueryable&lt;&#39;?10014&gt; -&gt; IQueryable&lt;&#39;?10014&gt;<br />
+                          <strong>Type parameters:</strong> '?10014          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Skip(source, count)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.skip"><code>Skip(source, count)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L109-109" class="github-link">Go to GitHub source</a>
         </td>
@@ -614,15 +614,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '237', 237)" onmouseover="showTip(event, '237', 237)">
+          <code onmouseout="hideTip(event, '146', 146)" onmouseover="showTip(event, '146', 146)">
             skipWhile predicate source
           </code>
-          <div class="tip" id="237">
+          <div class="tip" id="146">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>SkipWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.skipwhile"><code>SkipWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L112-112" class="github-link">Go to GitHub source</a>
         </td>
@@ -630,15 +630,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '238', 238)" onmouseover="showTip(event, '238', 238)">
+          <code onmouseout="hideTip(event, '147', 147)" onmouseover="showTip(event, '147', 147)">
             take count source
           </code>
-          <div class="tip" id="238">
-            <strong>Signature:</strong> count:int -&gt; source:IQueryable&lt;&#39;?10022&gt; -&gt; IQueryable&lt;&#39;?10022&gt;<br />
-                          <strong>Type parameters:</strong> '?10022          </div>
+          <div class="tip" id="147">
+            <strong>Signature:</strong> count:int -&gt; source:IQueryable&lt;&#39;?10018&gt; -&gt; IQueryable&lt;&#39;?10018&gt;<br />
+                          <strong>Type parameters:</strong> '?10018          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Take(source, count)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.take"><code>Take(source, count)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L115-115" class="github-link">Go to GitHub source</a>
         </td>
@@ -646,15 +646,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '239', 239)" onmouseover="showTip(event, '239', 239)">
+          <code onmouseout="hideTip(event, '148', 148)" onmouseover="showTip(event, '148', 148)">
             takeWhile predicate source
           </code>
-          <div class="tip" id="239">
+          <div class="tip" id="148">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>TakeWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.takewhile"><code>TakeWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L118-118" class="github-link">Go to GitHub source</a>
         </td>
@@ -662,15 +662,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '240', 240)" onmouseover="showTip(event, '240', 240)">
+          <code onmouseout="hideTip(event, '149', 149)" onmouseover="showTip(event, '149', 149)">
             thenBy keySelector source
           </code>
-          <div class="tip" id="240">
+          <div class="tip" id="149">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; source:IOrderedQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>ThenBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenby"><code>ThenBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L121-121" class="github-link">Go to GitHub source</a>
         </td>
@@ -678,15 +678,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '241', 241)" onmouseover="showTip(event, '241', 241)">
+          <code onmouseout="hideTip(event, '150', 150)" onmouseover="showTip(event, '150', 150)">
             thenByDescending keySelector source
           </code>
-          <div class="tip" id="241">
+          <div class="tip" id="150">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; source:IOrderedQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>ThenByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenbydescending"><code>ThenByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L124-124" class="github-link">Go to GitHub source</a>
         </td>
@@ -694,15 +694,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '242', 242)" onmouseover="showTip(event, '242', 242)">
+          <code onmouseout="hideTip(event, '151', 151)" onmouseover="showTip(event, '151', 151)">
             union source1 source2
           </code>
-          <div class="tip" id="242">
-            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?10032&gt; -&gt; source2:IEnumerable&lt;&#39;?10032&gt; -&gt; IQueryable&lt;&#39;?10032&gt;<br />
-                          <strong>Type parameters:</strong> '?10032          </div>
+          <div class="tip" id="151">
+            <strong>Signature:</strong> source1:IQueryable&lt;&#39;?10028&gt; -&gt; source2:IEnumerable&lt;&#39;?10028&gt; -&gt; IQueryable&lt;&#39;?10028&gt;<br />
+                          <strong>Type parameters:</strong> '?10028          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Union(source1, source2)</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.union"><code>Union(source1, source2)</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L127-127" class="github-link">Go to GitHub source</a>
         </td>
@@ -710,15 +710,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '243', 243)" onmouseover="showTip(event, '243', 243)">
+          <code onmouseout="hideTip(event, '152', 152)" onmouseover="showTip(event, '152', 152)">
             where predicate source
           </code>
-          <div class="tip" id="243">
+          <div class="tip" id="152">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Where(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.where"><code>Where(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L130-130" class="github-link">Go to GitHub source</a>
         </td>
@@ -726,15 +726,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '244', 244)" onmouseover="showTip(event, '244', 244)">
+          <code onmouseout="hideTip(event, '153', 153)" onmouseover="showTip(event, '153', 153)">
             zip resultSelector source1 source2
           </code>
-          <div class="tip" id="244">
+          <div class="tip" id="153">
             <strong>Signature:</strong> resultSelector:Expr&lt;(&#39;TFirst -&gt; &#39;TSecond -&gt; &#39;TResult)&gt; -&gt; source1:IQueryable&lt;&#39;TFirst&gt; -&gt; source2:IEnumerable&lt;&#39;TSecond&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
                           <strong>Type parameters:</strong> 'TFirst, 'TSecond, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <code>Zip(source1, source2, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TFirst, 'TSecond, 'TResult&gt;&gt;(resultSelector))</code></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.zip"><code>Zip(source1, source2, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TFirst, 'TSecond, 'TResult&gt;&gt;(resultSelector))</code></a></p>
 
             <a href="https://github.com/jbtule/ComposableExtensions/blob/master/src/Composable.Linq/Queryable.fsx#L133-133" class="github-link">Go to GitHub source</a>
         </td>
