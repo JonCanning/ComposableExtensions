@@ -52,513 +52,513 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '164', 164)" onmouseover="showTip(event, '164', 164)">
+          <code onmouseout="hideTip(event, '165', 165)" onmouseover="showTip(event, '165', 165)">
             aggregate seed func selector source
           </code>
-          <div class="tip" id="164">
+          <div class="tip" id="165">
             <strong>Signature:</strong> seed:&#39;TAccumulate -&gt; func:Expr&lt;(&#39;TAccumulate -&gt; &#39;TSource -&gt; &#39;TAccumulate)&gt; -&gt; selector:Expr&lt;(&#39;TAccumulate -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
                           <strong>Type parameters:</strong> 'TAccumulate, 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.aggregate"><code>Aggregate(source, seed, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TAccumulate, 'TSource, 'TAccumulate&gt;&gt;(func), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TAccumulate, 'TResult&gt;&gt;(selector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L139-139" class="github-link">Go to GitHub source</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '165', 165)" onmouseover="showTip(event, '165', 165)">
-            any predicate source
-          </code>
-          <div class="tip" id="165">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
-        </td>
-        <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.any"><code>Any(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
-
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L142-142" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L139-139" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '166', 166)" onmouseover="showTip(event, '166', 166)">
-            asQueryable source
+            any predicate source
           </code>
           <div class="tip" id="166">
-            <strong>Signature:</strong> source:IEnumerable -&gt; IQueryable<br />
-                      </div>
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.asqueryable"><code>AsQueryable(source)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.any"><code>Any(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L145-145" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L142-142" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '167', 167)" onmouseover="showTip(event, '167', 167)">
-            contains item comparer source
+            asQueryable source
           </code>
           <div class="tip" id="167">
-            <strong>Signature:</strong> item:&#39;?10045 -&gt; comparer:IEqualityComparer&lt;&#39;?10045&gt; -&gt; source:IQueryable&lt;&#39;?10045&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?10045          </div>
+            <strong>Signature:</strong> source:IEnumerable -&gt; IQueryable<br />
+                      </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.contains"><code>Contains(source, item, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.asqueryable"><code>AsQueryable(source)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L148-148" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L145-145" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '168', 168)" onmouseover="showTip(event, '168', 168)">
-            count predicate source
+            contains item comparer source
           </code>
           <div class="tip" id="168">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; int<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> item:&#39;?10050 -&gt; comparer:IEqualityComparer&lt;&#39;?10050&gt; -&gt; source:IQueryable&lt;&#39;?10050&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10050          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.count"><code>Count(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.contains"><code>Contains(source, item, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L151-151" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L148-148" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '169', 169)" onmouseover="showTip(event, '169', 169)">
-            defaultIfEmpty defaultValue source
+            count predicate source
           </code>
           <div class="tip" id="169">
-            <strong>Signature:</strong> defaultValue:&#39;?10049 -&gt; source:IQueryable&lt;&#39;?10049&gt; -&gt; IQueryable&lt;&#39;?10049&gt;<br />
-                          <strong>Type parameters:</strong> '?10049          </div>
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.defaultifempty"><code>DefaultIfEmpty(source, defaultValue)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.count"><code>Count(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L154-154" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L151-151" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '170', 170)" onmouseover="showTip(event, '170', 170)">
-            distinct comparer source
+            defaultIfEmpty defaultValue source
           </code>
           <div class="tip" id="170">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10051&gt; -&gt; source:IQueryable&lt;&#39;?10051&gt; -&gt; IQueryable&lt;&#39;?10051&gt;<br />
-                          <strong>Type parameters:</strong> '?10051          </div>
+            <strong>Signature:</strong> defaultValue:&#39;?10054 -&gt; source:IQueryable&lt;&#39;?10054&gt; -&gt; IQueryable&lt;&#39;?10054&gt;<br />
+                          <strong>Type parameters:</strong> '?10054          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.distinct"><code>Distinct(source, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.defaultifempty"><code>DefaultIfEmpty(source, defaultValue)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L157-157" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L154-154" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '171', 171)" onmouseover="showTip(event, '171', 171)">
-            except source2 comparer source1
+            distinct comparer source
           </code>
           <div class="tip" id="171">
-            <strong>Signature:</strong> source2:IEnumerable&lt;&#39;?10053&gt; -&gt; comparer:IEqualityComparer&lt;&#39;?10053&gt; -&gt; source1:IQueryable&lt;&#39;?10053&gt; -&gt; IQueryable&lt;&#39;?10053&gt;<br />
-                          <strong>Type parameters:</strong> '?10053          </div>
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10056&gt; -&gt; source:IQueryable&lt;&#39;?10056&gt; -&gt; IQueryable&lt;&#39;?10056&gt;<br />
+                          <strong>Type parameters:</strong> '?10056          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.except"><code>Except(source1, source2, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.distinct"><code>Distinct(source, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L160-160" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L157-157" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '172', 172)" onmouseover="showTip(event, '172', 172)">
-            first predicate source
+            except source2 comparer source1
           </code>
           <div class="tip" id="172">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> source2:IEnumerable&lt;&#39;?10058&gt; -&gt; comparer:IEqualityComparer&lt;&#39;?10058&gt; -&gt; source1:IQueryable&lt;&#39;?10058&gt; -&gt; IQueryable&lt;&#39;?10058&gt;<br />
+                          <strong>Type parameters:</strong> '?10058          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.first"><code>First(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.except"><code>Except(source1, source2, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L163-163" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L160-160" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '173', 173)" onmouseover="showTip(event, '173', 173)">
-            firstOrDefault predicate source
+            first predicate source
           </code>
           <div class="tip" id="173">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.firstordefault"><code>FirstOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.first"><code>First(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L166-166" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L163-163" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '174', 174)" onmouseover="showTip(event, '174', 174)">
-            groupBy (...)
+            firstOrDefault predicate source
           </code>
           <div class="tip" id="174">
-            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; elementSelector:Expr&lt;(&#39;TSource -&gt; &#39;TElement)&gt; -&gt; resultSelector:Expr&lt;(&#39;TKey -&gt; IEnumerable&lt;&#39;TElement&gt; -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement, 'TResult          </div>
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupby"><code>GroupBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TElement&gt;&gt;(elementSelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TKey, System.Collections.Generic.IEnumerable&lt;'TElement&gt;, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.firstordefault"><code>FirstOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L169-169" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L166-166" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '175', 175)" onmouseover="showTip(event, '175', 175)">
-            groupJoin (...)
+            groupBy (...)
           </code>
           <div class="tip" id="175">
-            <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; elementSelector:Expr&lt;(&#39;TSource -&gt; &#39;TElement)&gt; -&gt; resultSelector:Expr&lt;(&#39;TKey -&gt; IEnumerable&lt;&#39;TElement&gt; -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupjoin"><code>GroupJoin(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupby"><code>GroupBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TElement&gt;&gt;(elementSelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TKey, System.Collections.Generic.IEnumerable&lt;'TElement&gt;, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L172-172" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L169-169" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '176', 176)" onmouseover="showTip(event, '176', 176)">
-            intersect comparer source1 source2
+            groupJoin (...)
           </code>
           <div class="tip" id="176">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10069&gt; -&gt; source1:IQueryable&lt;&#39;?10069&gt; -&gt; source2:IEnumerable&lt;&#39;?10069&gt; -&gt; IQueryable&lt;&#39;?10069&gt;<br />
-                          <strong>Type parameters:</strong> '?10069          </div>
+            <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.intersect"><code>Intersect(source1, source2, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.groupjoin"><code>GroupJoin(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L175-175" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L172-172" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '177', 177)" onmouseover="showTip(event, '177', 177)">
-            join (...)
+            intersect comparer source1 source2
           </code>
           <div class="tip" id="177">
-            <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10074&gt; -&gt; source1:IQueryable&lt;&#39;?10074&gt; -&gt; source2:IEnumerable&lt;&#39;?10074&gt; -&gt; IQueryable&lt;&#39;?10074&gt;<br />
+                          <strong>Type parameters:</strong> '?10074          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.join"><code>Join(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TInner, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.intersect"><code>Intersect(source1, source2, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L178-178" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L175-175" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '178', 178)" onmouseover="showTip(event, '178', 178)">
-            last predicate source
+            join (...)
           </code>
           <div class="tip" id="178">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> outerKeySelector:Expr&lt;(&#39;TOuter -&gt; &#39;TKey)&gt; -&gt; innerKeySelector:Expr&lt;(&#39;TInner -&gt; &#39;TKey)&gt; -&gt; resultSelector:Expr&lt;(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult)&gt; -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:IQueryable&lt;&#39;TOuter&gt; -&gt; inner:IEnumerable&lt;&#39;TInner&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.last"><code>Last(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.join"><code>Join(outer, inner, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TKey&gt;&gt;(outerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TInner, 'TKey&gt;&gt;(innerKeySelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TOuter, 'TInner, 'TResult&gt;&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L181-181" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L178-178" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '179', 179)" onmouseover="showTip(event, '179', 179)">
-            lastOrDefault predicate source
+            last predicate source
           </code>
           <div class="tip" id="179">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.lastordefault"><code>LastOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.last"><code>Last(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L184-184" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L181-181" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '180', 180)" onmouseover="showTip(event, '180', 180)">
-            longCount predicate source
+            lastOrDefault predicate source
           </code>
           <div class="tip" id="180">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; int64<br />
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.longcount"><code>LongCount(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.lastordefault"><code>LastOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L187-187" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L184-184" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '181', 181)" onmouseover="showTip(event, '181', 181)">
-            max selector source
+            longCount predicate source
           </code>
           <div class="tip" id="181">
-            <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.max"><code>Max(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.longcount"><code>LongCount(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L190-190" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L187-187" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '182', 182)" onmouseover="showTip(event, '182', 182)">
-            min selector source
+            max selector source
           </code>
           <div class="tip" id="182">
             <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
                           <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.min"><code>Min(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.max"><code>Max(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L193-193" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L190-190" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '183', 183)" onmouseover="showTip(event, '183', 183)">
-            orderBy keySelector comparer source
+            min selector source
           </code>
           <div class="tip" id="183">
-            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+            <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderby"><code>OrderBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.min"><code>Min(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TResult&gt;&gt;(selector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L196-196" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L193-193" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '184', 184)" onmouseover="showTip(event, '184', 184)">
-            orderByDescending (...)
+            orderBy keySelector comparer source
           </code>
           <div class="tip" id="184">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderbydescending"><code>OrderByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderby"><code>OrderBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L199-199" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L196-196" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '185', 185)" onmouseover="showTip(event, '185', 185)">
-            select selector source
+            orderByDescending (...)
           </code>
           <div class="tip" id="185">
-            <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
+            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.select"><code>Select(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, 'TResult&gt;&gt;(selector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.orderbydescending"><code>OrderByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L202-202" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L199-199" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '186', 186)" onmouseover="showTip(event, '186', 186)">
-            selectMany (...)
+            select selector source
           </code>
           <div class="tip" id="186">
-            <strong>Signature:</strong> collectionSelector:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; IEnumerable&lt;&#39;TCollection&gt;)&gt; -&gt; resultSelector:Expr&lt;(&#39;TSource -&gt; &#39;TCollection -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TCollection, 'TResult          </div>
+            <strong>Signature:</strong> selector:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.selectmany"><code>SelectMany(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Collections.Generic.IEnumerable&lt;'TCollection&gt;&gt;&gt;(collectionSelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TCollection, 'TResult&gt;&gt;(resultSelector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.select"><code>Select(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, 'TResult&gt;&gt;(selector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L205-205" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L202-202" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '187', 187)" onmouseover="showTip(event, '187', 187)">
-            sequenceEqual comparer source1 source2
+            selectMany (...)
           </code>
           <div class="tip" id="187">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10101&gt; -&gt; source1:IQueryable&lt;&#39;?10101&gt; -&gt; source2:IEnumerable&lt;&#39;?10101&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?10101          </div>
+            <strong>Signature:</strong> collectionSelector:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; IEnumerable&lt;&#39;TCollection&gt;)&gt; -&gt; resultSelector:Expr&lt;(&#39;TSource -&gt; &#39;TCollection -&gt; &#39;TResult)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TCollection, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.sequenceequal"><code>SequenceEqual(source1, source2, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.selectmany"><code>SelectMany(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Collections.Generic.IEnumerable&lt;'TCollection&gt;&gt;&gt;(collectionSelector), ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TCollection, 'TResult&gt;&gt;(resultSelector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L208-208" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L205-205" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '188', 188)" onmouseover="showTip(event, '188', 188)">
-            single predicate source
+            sequenceEqual comparer source1 source2
           </code>
           <div class="tip" id="188">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10106&gt; -&gt; source1:IQueryable&lt;&#39;?10106&gt; -&gt; source2:IEnumerable&lt;&#39;?10106&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10106          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.single"><code>Single(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.sequenceequal"><code>SequenceEqual(source1, source2, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L211-211" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L208-208" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '189', 189)" onmouseover="showTip(event, '189', 189)">
-            singleOrDefault predicate source
+            single predicate source
           </code>
           <div class="tip" id="189">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.singleordefault"><code>SingleOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.single"><code>Single(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L214-214" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L211-211" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '190', 190)" onmouseover="showTip(event, '190', 190)">
-            skipWhile predicate source
+            singleOrDefault predicate source
           </code>
           <div class="tip" id="190">
-            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.skipwhile"><code>SkipWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.singleordefault"><code>SingleOrDefault(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L217-217" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L214-214" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '191', 191)" onmouseover="showTip(event, '191', 191)">
-            takeWhile predicate source
+            skipWhile predicate source
           </code>
           <div class="tip" id="191">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.takewhile"><code>TakeWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Boolean&gt;&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.skipwhile"><code>SkipWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L220-220" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L217-217" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '192', 192)" onmouseover="showTip(event, '192', 192)">
-            thenBy keySelector comparer source
+            takeWhile predicate source
           </code>
           <div class="tip" id="192">
-            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IOrderedQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+            <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenby"><code>ThenBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.takewhile"><code>TakeWhile(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L223-223" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L220-220" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '193', 193)" onmouseover="showTip(event, '193', 193)">
-            thenByDescending (...)
+            thenBy keySelector comparer source
           </code>
           <div class="tip" id="193">
             <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IOrderedQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenbydescending"><code>ThenByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenby"><code>ThenBy(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L226-226" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L223-223" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '194', 194)" onmouseover="showTip(event, '194', 194)">
-            union comparer source1 source2
+            thenByDescending (...)
           </code>
           <div class="tip" id="194">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10117&gt; -&gt; source1:IQueryable&lt;&#39;?10117&gt; -&gt; source2:IEnumerable&lt;&#39;?10117&gt; -&gt; IQueryable&lt;&#39;?10117&gt;<br />
-                          <strong>Type parameters:</strong> '?10117          </div>
+            <strong>Signature:</strong> keySelector:Expr&lt;(&#39;TSource -&gt; &#39;TKey)&gt; -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:IOrderedQueryable&lt;&#39;TSource&gt; -&gt; IOrderedQueryable&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.union"><code>Union(source1, source2, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.thenbydescending"><code>ThenByDescending(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, 'TKey&gt;&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L229-229" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L226-226" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '195', 195)" onmouseover="showTip(event, '195', 195)">
-            where predicate source
+            union comparer source1 source2
           </code>
           <div class="tip" id="195">
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10122&gt; -&gt; source1:IQueryable&lt;&#39;?10122&gt; -&gt; source2:IEnumerable&lt;&#39;?10122&gt; -&gt; IQueryable&lt;&#39;?10122&gt;<br />
+                          <strong>Type parameters:</strong> '?10122          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.union"><code>Union(source1, source2, comparer)</code></a></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L229-229" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '196', 196)" onmouseover="showTip(event, '196', 196)">
+            where predicate source
+          </code>
+          <div class="tip" id="196">
             <strong>Signature:</strong> predicate:Expr&lt;(&#39;TSource -&gt; Int32 -&gt; Boolean)&gt; -&gt; source:IQueryable&lt;&#39;TSource&gt; -&gt; IQueryable&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.where"><code>Where(source, ComposableExtensions.Quotations.toExpression&lt;System.Func&lt;'TSource, System.Int32, System.Boolean&gt;&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/Queryable.fsx#L232-232" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/Queryable.fsx#L232-232" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
     </tbody>

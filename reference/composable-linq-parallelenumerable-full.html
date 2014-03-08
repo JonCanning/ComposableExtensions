@@ -52,513 +52,513 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
+          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
             aggregate (...)
           </code>
-          <div class="tip" id="80">
+          <div class="tip" id="81">
             <strong>Signature:</strong> seedFactory:(unit -&gt; &#39;TAccumulate) -&gt; updateAccumulatorFunc:(&#39;TAccumulate -&gt; &#39;TSource -&gt; &#39;TAccumulate) -&gt; combineAccumulatorsFunc:(&#39;TAccumulate -&gt; &#39;TAccumulate -&gt; &#39;TAccumulate) -&gt; resultSelector:(&#39;TAccumulate -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TResult<br />
                           <strong>Type parameters:</strong> 'TAccumulate, 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.aggregate"><code>Aggregate(source, System.Func&lt;'TAccumulate&gt;(seedFactory), System.Func&lt;'TAccumulate, 'TSource, 'TAccumulate&gt;(updateAccumulatorFunc), System.Func&lt;'TAccumulate, 'TAccumulate, 'TAccumulate&gt;(combineAccumulatorsFunc), System.Func&lt;'TAccumulate, 'TResult&gt;(resultSelector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L167-167" class="github-link">Go to GitHub source</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
-            any predicate source
-          </code>
-          <div class="tip" id="81">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
-        </td>
-        <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.any"><code>Any(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
-
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L170-170" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L167-167" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '82', 82)" onmouseover="showTip(event, '82', 82)">
-            asOrdered source
+            any predicate source
           </code>
           <div class="tip" id="82">
-            <strong>Signature:</strong> source:ParallelQuery -&gt; ParallelQuery<br />
-                      </div>
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.asordered"><code>AsOrdered(source)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.any"><code>Any(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L173-173" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L170-170" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '83', 83)" onmouseover="showTip(event, '83', 83)">
-            contains value comparer source
+            asOrdered source
           </code>
           <div class="tip" id="83">
-            <strong>Signature:</strong> value:&#39;?10251 -&gt; comparer:IEqualityComparer&lt;&#39;?10251&gt; -&gt; source:ParallelQuery&lt;&#39;?10251&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> '?10251          </div>
+            <strong>Signature:</strong> source:ParallelQuery -&gt; ParallelQuery<br />
+                      </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.contains"><code>Contains(source, value, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.asordered"><code>AsOrdered(source)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L176-176" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L173-173" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '84', 84)" onmouseover="showTip(event, '84', 84)">
-            count predicate source
+            contains value comparer source
           </code>
           <div class="tip" id="84">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> value:&#39;?10256 -&gt; comparer:IEqualityComparer&lt;&#39;?10256&gt; -&gt; source:ParallelQuery&lt;&#39;?10256&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> '?10256          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.count"><code>Count(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.contains"><code>Contains(source, value, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L179-179" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L176-176" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '85', 85)" onmouseover="showTip(event, '85', 85)">
-            defaultIfEmpty defaultValue source
+            count predicate source
           </code>
           <div class="tip" id="85">
-            <strong>Signature:</strong> defaultValue:&#39;?10255 -&gt; source:ParallelQuery&lt;&#39;?10255&gt; -&gt; ParallelQuery&lt;&#39;?10255&gt;<br />
-                          <strong>Type parameters:</strong> '?10255          </div>
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.defaultifempty"><code>DefaultIfEmpty(source, defaultValue)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.count"><code>Count(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L182-182" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L179-179" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '86', 86)" onmouseover="showTip(event, '86', 86)">
-            distinct comparer source
+            defaultIfEmpty defaultValue source
           </code>
           <div class="tip" id="86">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10257&gt; -&gt; source:ParallelQuery&lt;&#39;?10257&gt; -&gt; ParallelQuery&lt;&#39;?10257&gt;<br />
-                          <strong>Type parameters:</strong> '?10257          </div>
+            <strong>Signature:</strong> defaultValue:&#39;?10260 -&gt; source:ParallelQuery&lt;&#39;?10260&gt; -&gt; ParallelQuery&lt;&#39;?10260&gt;<br />
+                          <strong>Type parameters:</strong> '?10260          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.distinct"><code>Distinct(source, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.defaultifempty"><code>DefaultIfEmpty(source, defaultValue)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L185-185" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L182-182" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '87', 87)" onmouseover="showTip(event, '87', 87)">
-            except comparer first second
+            distinct comparer source
           </code>
           <div class="tip" id="87">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;?10262&gt; -&gt; source:ParallelQuery&lt;&#39;?10262&gt; -&gt; ParallelQuery&lt;&#39;?10262&gt;<br />
+                          <strong>Type parameters:</strong> '?10262          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.except"><code>Except(first, second, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.distinct"><code>Distinct(source, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L188-188" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L185-185" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '88', 88)" onmouseover="showTip(event, '88', 88)">
-            first predicate source
+            except comparer first second
           </code>
           <div class="tip" id="88">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.first"><code>First(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.except"><code>Except(first, second, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L191-191" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L188-188" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '89', 89)" onmouseover="showTip(event, '89', 89)">
-            firstOrDefault predicate source
+            first predicate source
           </code>
           <div class="tip" id="89">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.firstordefault"><code>FirstOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.first"><code>First(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L194-194" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L191-191" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '90', 90)" onmouseover="showTip(event, '90', 90)">
-            groupBy (...)
+            firstOrDefault predicate source
           </code>
           <div class="tip" id="90">
-            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; resultSelector:(&#39;TKey -&gt; IEnumerable&lt;&#39;TElement&gt; -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement, 'TResult          </div>
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.groupby"><code>GroupBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), System.Func&lt;'TKey, System.Collections.Generic.IEnumerable&lt;'TElement&gt;, 'TResult&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.firstordefault"><code>FirstOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L197-197" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L194-194" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '91', 91)" onmouseover="showTip(event, '91', 91)">
-            groupJoin (...)
+            groupBy (...)
           </code>
           <div class="tip" id="91">
-            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; resultSelector:(&#39;TKey -&gt; IEnumerable&lt;&#39;TElement&gt; -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.groupjoin"><code>GroupJoin(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.groupby"><code>GroupBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), System.Func&lt;'TKey, System.Collections.Generic.IEnumerable&lt;'TElement&gt;, 'TResult&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L200-200" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L197-197" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '92', 92)" onmouseover="showTip(event, '92', 92)">
-            intersect comparer first second
+            groupJoin (...)
           </code>
           <div class="tip" id="92">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; IEnumerable&lt;&#39;TInner&gt; -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.intersect"><code>Intersect(first, second, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.groupjoin"><code>GroupJoin(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, System.Collections.Generic.IEnumerable&lt;'TInner&gt;, 'TResult&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L203-203" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L200-200" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '93', 93)" onmouseover="showTip(event, '93', 93)">
-            join (...)
+            intersect comparer first second
           </code>
           <div class="tip" id="93">
-            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.join"><code>Join(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, 'TInner, 'TResult&gt;(resultSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.intersect"><code>Intersect(first, second, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L206-206" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L203-203" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '94', 94)" onmouseover="showTip(event, '94', 94)">
-            last predicate source
+            join (...)
           </code>
           <div class="tip" id="94">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> outerKeySelector:(&#39;TOuter -&gt; &#39;TKey) -&gt; innerKeySelector:(&#39;TInner -&gt; &#39;TKey) -&gt; resultSelector:(&#39;TOuter -&gt; &#39;TInner -&gt; &#39;TResult) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; outer:ParallelQuery&lt;&#39;TOuter&gt; -&gt; inner:ParallelQuery&lt;&#39;TInner&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TOuter, 'TKey, 'TInner, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.last"><code>Last(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.join"><code>Join(outer, inner, System.Func&lt;'TOuter, 'TKey&gt;(outerKeySelector), System.Func&lt;'TInner, 'TKey&gt;(innerKeySelector), System.Func&lt;'TOuter, 'TInner, 'TResult&gt;(resultSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L209-209" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L206-206" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '95', 95)" onmouseover="showTip(event, '95', 95)">
-            lastOrDefault predicate source
+            last predicate source
           </code>
           <div class="tip" id="95">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.lastordefault"><code>LastOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.last"><code>Last(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L212-212" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L209-209" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '96', 96)" onmouseover="showTip(event, '96', 96)">
-            longCount predicate source
+            lastOrDefault predicate source
           </code>
           <div class="tip" id="96">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int64<br />
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.longcount"><code>LongCount(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.lastordefault"><code>LastOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L215-215" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L212-212" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '97', 97)" onmouseover="showTip(event, '97', 97)">
-            orderBy keySelector comparer source
+            longCount predicate source
           </code>
           <div class="tip" id="97">
-            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; int64<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.orderby"><code>OrderBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.longcount"><code>LongCount(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L218-218" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L215-215" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '98', 98)" onmouseover="showTip(event, '98', 98)">
-            orderByDescending (...)
+            orderBy keySelector comparer source
           </code>
           <div class="tip" id="98">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.orderbydescending"><code>OrderByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.orderby"><code>OrderBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L221-221" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L218-218" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '99', 99)" onmouseover="showTip(event, '99', 99)">
-            select selector source
+            orderByDescending (...)
           </code>
           <div class="tip" id="99">
-            <strong>Signature:</strong> selector:(&#39;TSource -&gt; Int32 -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.select"><code>Select(source, System.Func&lt;'TSource, System.Int32, 'TResult&gt;(selector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.orderbydescending"><code>OrderByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L224-224" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L221-221" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '100', 100)" onmouseover="showTip(event, '100', 100)">
-            selectMany (...)
+            select selector source
           </code>
           <div class="tip" id="100">
-            <strong>Signature:</strong> collectionSelector:(&#39;TSource -&gt; Int32 -&gt; IEnumerable&lt;&#39;TCollection&gt;) -&gt; resultSelector:(&#39;TSource -&gt; &#39;TCollection -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TCollection, 'TResult          </div>
+            <strong>Signature:</strong> selector:(&#39;TSource -&gt; Int32 -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.selectmany"><code>SelectMany(source, System.Func&lt;'TSource, System.Int32, System.Collections.Generic.IEnumerable&lt;'TCollection&gt;&gt;(collectionSelector), System.Func&lt;'TSource, 'TCollection, 'TResult&gt;(resultSelector))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.select"><code>Select(source, System.Func&lt;'TSource, System.Int32, 'TResult&gt;(selector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L227-227" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L224-224" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '101', 101)" onmouseover="showTip(event, '101', 101)">
-            sequenceEqual comparer first second
+            selectMany (...)
           </code>
           <div class="tip" id="101">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> collectionSelector:(&#39;TSource -&gt; Int32 -&gt; IEnumerable&lt;&#39;TCollection&gt;) -&gt; resultSelector:(&#39;TSource -&gt; &#39;TCollection -&gt; &#39;TResult) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TResult&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TCollection, 'TResult          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.sequenceequal"><code>SequenceEqual(first, second, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.selectmany"><code>SelectMany(source, System.Func&lt;'TSource, System.Int32, System.Collections.Generic.IEnumerable&lt;'TCollection&gt;&gt;(collectionSelector), System.Func&lt;'TSource, 'TCollection, 'TResult&gt;(resultSelector))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L230-230" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L227-227" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '102', 102)" onmouseover="showTip(event, '102', 102)">
-            single predicate source
+            sequenceEqual comparer first second
           </code>
           <div class="tip" id="102">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; bool<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.single"><code>Single(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.sequenceequal"><code>SequenceEqual(first, second, comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L233-233" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L230-230" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '103', 103)" onmouseover="showTip(event, '103', 103)">
-            singleOrDefault predicate source
+            single predicate source
           </code>
           <div class="tip" id="103">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.singleordefault"><code>SingleOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.single"><code>Single(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L236-236" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L233-233" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '104', 104)" onmouseover="showTip(event, '104', 104)">
-            skipWhile predicate source
+            singleOrDefault predicate source
           </code>
           <div class="tip" id="104">
-            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Int32 -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; &#39;TSource<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.skipwhile"><code>SkipWhile(source, System.Func&lt;'TSource, System.Int32, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.singleordefault"><code>SingleOrDefault(source, System.Func&lt;'TSource, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L239-239" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L236-236" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '105', 105)" onmouseover="showTip(event, '105', 105)">
-            takeWhile predicate source
+            skipWhile predicate source
           </code>
           <div class="tip" id="105">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Int32 -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.takewhile"><code>TakeWhile(source, System.Func&lt;'TSource, System.Int32, System.Boolean&gt;(predicate))</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.skipwhile"><code>SkipWhile(source, System.Func&lt;'TSource, System.Int32, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L242-242" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L239-239" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '106', 106)" onmouseover="showTip(event, '106', 106)">
-            thenBy keySelector comparer source
+            takeWhile predicate source
           </code>
           <div class="tip" id="106">
-            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
+            <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Int32 -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.thenby"><code>ThenBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.takewhile"><code>TakeWhile(source, System.Func&lt;'TSource, System.Int32, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L245-245" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L242-242" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '107', 107)" onmouseover="showTip(event, '107', 107)">
-            thenByDescending (...)
+            thenBy keySelector comparer source
           </code>
           <div class="tip" id="107">
             <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.thenbydescending"><code>ThenByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.thenby"><code>ThenBy(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L248-248" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L245-245" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '108', 108)" onmouseover="showTip(event, '108', 108)">
-            toDictionary (...)
+            thenByDescending (...)
           </code>
           <div class="tip" id="108">
-            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; Dictionary&lt;&#39;TKey,&#39;TElement&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement          </div>
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; comparer:IComparer&lt;&#39;TKey&gt; -&gt; source:OrderedParallelQuery&lt;&#39;TSource&gt; -&gt; OrderedParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.todictionary"><code>ToDictionary(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.thenbydescending"><code>ThenByDescending(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L251-251" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L248-248" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '109', 109)" onmouseover="showTip(event, '109', 109)">
-            toLookup (...)
+            toDictionary (...)
           </code>
           <div class="tip" id="109">
-            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ILookup&lt;&#39;TKey,&#39;TElement&gt;<br />
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; Dictionary&lt;&#39;TKey,&#39;TElement&gt;<br />
                           <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.tolookup"><code>ToLookup(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.todictionary"><code>ToDictionary(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L254-254" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L251-251" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '110', 110)" onmouseover="showTip(event, '110', 110)">
-            union comparer first second
+            toLookup (...)
           </code>
           <div class="tip" id="110">
-            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
-                          <strong>Type parameters:</strong> 'TSource          </div>
+            <strong>Signature:</strong> keySelector:(&#39;TSource -&gt; &#39;TKey) -&gt; elementSelector:(&#39;TSource -&gt; &#39;TElement) -&gt; comparer:IEqualityComparer&lt;&#39;TKey&gt; -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ILookup&lt;&#39;TKey,&#39;TElement&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource, 'TKey, 'TElement          </div>
         </td>
         <td class="xmldoc">
-        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.union"><code>Union(first, second, comparer)</code></a></p>
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.tolookup"><code>ToLookup(source, System.Func&lt;'TSource, 'TKey&gt;(keySelector), System.Func&lt;'TSource, 'TElement&gt;(elementSelector), comparer)</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L257-257" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L254-254" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '111', 111)" onmouseover="showTip(event, '111', 111)">
-            where predicate source
+            union comparer first second
           </code>
           <div class="tip" id="111">
+            <strong>Signature:</strong> comparer:IEqualityComparer&lt;&#39;TSource&gt; -&gt; first:ParallelQuery&lt;&#39;TSource&gt; -&gt; second:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
+                          <strong>Type parameters:</strong> 'TSource          </div>
+        </td>
+        <td class="xmldoc">
+        <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.union"><code>Union(first, second, comparer)</code></a></p>
+
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L257-257" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '112', 112)" onmouseover="showTip(event, '112', 112)">
+            where predicate source
+          </code>
+          <div class="tip" id="112">
             <strong>Signature:</strong> predicate:(&#39;TSource -&gt; Int32 -&gt; Boolean) -&gt; source:ParallelQuery&lt;&#39;TSource&gt; -&gt; ParallelQuery&lt;&#39;TSource&gt;<br />
                           <strong>Type parameters:</strong> 'TSource          </div>
         </td>
         <td class="xmldoc">
         <p>Calls <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.where"><code>Where(source, System.Func&lt;'TSource, System.Int32, System.Boolean&gt;(predicate))</code></a></p>
 
-            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/Composable.Linq/ParallelEnumerable.fsx#L260-260" class="github-link">Go to GitHub source</a>
+            <a href="https://github.com/jbtule/ComposableExtensions/blob/stable/src/NET45/NET45/Composable.Linq/ParallelEnumerable.fsx#L260-260" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
     </tbody>
